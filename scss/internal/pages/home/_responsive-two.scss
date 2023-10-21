@@ -1,0 +1,330 @@
+@media screen and(max-width:500px) {
+ 
+.awards-one{
+    background-position-x: 14px;
+    background-size:391px 168px;
+}
+.tl-p{
+    display: block;
+}
+
+.site-arrow{
+    width: 8px;
+}
+.inspire{
+    margin-top: 40px;
+}
+.people-in-performance{
+    margin-top: 80px;
+}
+.awards-one img{
+    width: 280px;
+    height: 436px;
+}
+.mob-awards_heading{
+    font-size: 36px;
+    @include bold();
+    line-height: 48px;
+    color: #020926;
+    margin-bottom: 50px;
+    display: block;
+}
+.tl-pr-site{
+    width: 9px;
+}
+.footer-section_two-contact-address{
+    flex-wrap: nowrap;
+}
+.web_link{
+    display: flex;
+}
+.india {
+    margin-left: 26px;
+    margin-right: 35px;
+}
+.footer-social__mob{
+    display: block;
+}
+.accordion-button_custom::before{
+    width: 34px;
+    height: 34px;
+}
+.accordion-button_custom::after{
+    width: 37px;
+    height: 34px;
+}
+.grey-line__omni{
+    display: none;
+}
+.circle__resp{
+    height: 30px;
+    width: 30px;
+    margin-left: 11px!important;
+}
+.wrap__resp{
+    top: 9.5px;
+    left: 12px;
+}
+.arrow__resp::before{
+    height: 1px!important;
+}
+.arrow__resp::after{
+    height: 1px!important;
+}
+.card-list-info h2{
+    font-size: 24px!important;
+}
+.card-list-info p{
+    font-size: 14px!important;
+}
+.clients-omni{
+    font-size: 32px;
+}
+.accordian-line{
+    margin-left: unset;
+}
+.accordion-body_services-custom{
+margin-left: unset;
+}
+.list-para p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.accordion-body_services-custom{
+    width: 95%!important;
+}
+.branding-service h2{
+    font-size: 32px;
+}
+.card-list_change{
+    height: 361px!important;
+}
+.accordian-custom_embedded{
+    font-size:14px;
+    width:260px;
+}
+.accordion-body_services-custom_overright p{
+    width: 320px;
+}
+.list-para_custom_overright {
+    width: 320px;
+}
+.people-section{
+    display: none;
+}
+// .vision{
+//     display: none;
+// }
+.logo-white{
+    width: 150px;
+}
+.menu-font-two{
+    font-size: 13px;
+    margin-top: 7px;
+}
+.cards ul{
+    margin-left: unset;
+}
+.accord-body_services-sm{
+    margin-left: 0px;
+  }
+  .accordion-body_services-ui3{
+    margin-left:0px;
+  }
+.swiper-pagination-bullet-active .swiper-pagination-bullet-active-main{
+    background-color: #707070;
+    width: 20px;
+}
+.swiper-pagination-bullet{
+    background-color: white;
+    width: 20px!important;
+}
+.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left: 25%!important;
+    top: 84%;
+}
+.next-previous{
+    display: flex;
+}
+.card-list_down{
+    height: 365px!important;
+}
+.area-of_expert_mob{
+    padding-bottom: 50px;
+}
+.it-staff-clients{
+    margin-top:50px;
+}
+.get-in-touch_modal .reach_out-section_right h2{
+    font-size: 26px;
+}
+.get-in-touch_modal .reach_out-section_right label{
+    font-size: 16px;
+}
+.get-in-touch_modal .reach_out-section_right-mp{
+    flex-direction: column;
+}
+.phone_num{
+    padding-left: 0px;
+}
+.get-in-touch_modal .reach_out-section_right-info{
+    padding-bottom: 20px;
+}
+.intern_custom form {
+    padding: 0 20px 0 20px;
+}
+.intern-mob{
+    width: 100%;
+}
+.sub-nav{
+    display: none;
+}
+}
+
+.bread_crumb{
+    margin-top: -150px;
+    margin-left: 10px;
+}
+
+
+.join_us{
+    font-size: 15px;
+    text-decoration: none!important;
+}
+
+.circle__resp{
+    margin-left: 23px;
+}
+
+
+
+@media screen and(min-width:501px) {
+    .true-learning_mob{
+        display: none;
+    }
+    .mob-awards_heading{
+        display: none;
+    }
+    .tl-p{
+        display:none;
+    }
+    .footer-social__mob{
+        display: none;
+    }
+    .extra-down{
+        margin-bottom: 58px!important;
+    }
+}
+
+.tl-content{
+color:#b7b7b7;
+max-width: 375px;
+font-size: 16px;
+@include regular();
+}
+
+.tl-p-head{
+    font-size: 36px;
+    @include bold();
+    color: #020926;
+    margin-bottom: 30px;
+}
+.tl-pr{
+    background-color:#020926;
+    text-align: left;
+    padding-bottom: 30px;
+    padding-left:30px;
+    padding-right: 65px;
+    padding-top:30px;
+    h1{
+        @include medium();
+        font-size: 20px;
+        color: white;
+    }
+    p{
+        @include regular();
+        font-size: 14px;
+        color:#b7b7b7;
+        max-width: 230px;
+    }
+    a{
+        font-size: 12px;
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+}
+.tl-p-head-two{
+    margin-top: 40px;
+}
+.r-factor_img{
+    width: 558px;
+     height:97px;
+}
+@media screen and(max-width:430px) {
+    .r-factor_img{
+        width: 330px!important;
+         height:65px;
+    }
+
+}
+.company-name{
+    font-size: 15px;
+    color: #b7b7b7;
+    @include regular();
+}
+
+@media screen and(max-width:500px) {
+  .client-container{
+    height: 91px!important;
+    width: 180px!important;
+    padding-top: 30px!important;
+  }
+  .trojan-img{
+    height: 33px!important;
+    width: 72px!important;
+  }
+  .tngovt-img{
+    height: 42px!important;
+    width: 46px!important;
+  }
+  .accenture-img{
+    height: 25px!important;
+    width: 80px!important;
+  }
+.pwc-img{
+  height: 35px!important;
+  width: 63px!important;
+}
+.fls-img{
+  height: 26px!important;
+}
+.wipro-img{
+  width:49px!important;
+  height: 42px!important;
+}
+.black-img{
+  height: 26px!important;
+  width: 85px!important;
+}
+.fujitec-img{
+  height: 21px!important;
+  width: 69px!important;
+}
+.cms-img{
+height: 32px!important;
+}
+.medik-img{
+  height: 36px!important;
+  width: 83px!important;
+}
+.ey-img{
+width: 36px!important;
+height: 37px!important;
+}
+}
+.client-container{
+  width:293px;
+  height:200px;
+  padding-top: 70px;
+}

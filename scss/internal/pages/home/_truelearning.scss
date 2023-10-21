@@ -1,0 +1,219 @@
+// .true-learning-section {
+//   padding-bottom: 160px;
+//   .container {
+//     position: relative;
+//   }
+//   .img-container {
+//     position: absolute;
+//     top: 0;
+//     right: -90px;
+
+//     .right-slide-img {
+//       width: 822px;
+//       height: 500px;
+//     }
+//   }
+
+//   .true-learning {
+//     &-info {
+//       h2 {
+//         @include bold();
+//         font-size: 50px;
+//         padding-bottom: 30px;
+//       }
+//     }
+//     &_nav {
+//       display: flex;
+//       justify-content: space-between;
+//       margin-top: 50px;
+//       padding-right: 30px;
+//       .num-slider {
+//       }
+//       .num-slider-btn {
+//         color: #747373;
+//       }
+//     }
+//     &_div {
+//       &_content {
+//         padding-left: 30px;
+//         padding-top: 40px;
+//         width: 914px;
+//         height: 517px;
+//         background-color: #020926;
+//         color: white;
+
+//         h2 {
+//           @include bold();
+//           font-size: 38px;
+//           padding-bottom: 53px;
+//         }
+//         p {
+//           @include regular();
+//           font-size: 16px;
+//           color: #b7b7b7;
+//           max-width: 354px;
+//           padding-bottom: 30px;
+//         }
+//         &-info {
+//           display: flex;
+//           justify-content: space-between;
+//           align-items: baseline;
+//           a {
+//             text-decoration: none;
+//             font-size: 18px;
+//             color: #ffffff;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+.pagination_1{
+  padding-left: 28px!important;
+}
+.true-learning {
+  margin-bottom: 160px;
+  position: relative;
+  height: 650px;
+  position: relative;
+
+  article {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    padding-right: var(--bs-gutter-x, 0.75rem);
+
+    h2 {
+      @include bold();
+      font-size: 50px;
+      padding-bottom: 30px;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    .content-container {
+      width: 109%;
+      padding-left: 30px;
+      padding-top: 40px;
+      height: 517px;
+      background-color: #020926;
+      color: #fff;
+
+      .title {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+
+        h2 {
+          font-size: 38px;
+          padding-bottom: 53px;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 18px;
+          color: #fff;
+        }
+        p {
+          @include regular();
+          font-size: 16px;
+          color: #b7b7b7;
+          max-width: 50%;
+          padding-bottom: 30px;
+  
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
+      }
+
+      
+      
+
+      .pagination-container {
+        display: flex;
+        // justify-content: space-between;
+        gap: 663px;
+        margin-top: 77px;
+        padding-right: 30px;
+
+        .btn-container {
+          color: #747373;
+        }
+      }
+    }
+
+    &.active {
+      visibility: visible;
+      h2 {
+        opacity: 1;
+      }
+      .content-container {
+        .title,
+        p {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+
+  
+  .img-container {
+    position: absolute;
+    top: 0;
+    right: -90px;
+    .swiper-slide{
+      background: transparent;
+    }
+    img {
+      width: 822px;
+      height: 500px;
+    }
+    div {
+      // transition: transform 0.5s ease;
+      // display: flex;
+      // overflow-x: hidden;
+      width: 822px;
+
+     
+    }
+  }
+}
+
+#true-learning-prev{
+  background-color: #020926;
+  color: #747373;
+  border-bottom: 1px solid #747373;
+  @include regular();
+}
+#true-learning-next{
+  background-color: #020926;
+  color: #747373;
+  border-bottom: 1px solid #747373;
+  @include regular();
+}
+#true-learning-next:hover{
+  color: #fff;
+}
+#true-learning-prev:hover{
+  color: #fff;
+
+}
+.pagination{
+  @include bold();
+  font-size: 18px;
+}
+.btn-container a{
+  cursor: pointer;
+}
+@media screen and(max-width:500px) {
+  .true-learning{
+    display: none;
+  }
+}

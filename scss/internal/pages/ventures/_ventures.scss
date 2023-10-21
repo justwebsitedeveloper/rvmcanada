@@ -1,0 +1,165 @@
+.ventures-banner__image {
+  padding-top: 125px!important;
+  .banner-img_ventures{
+    padding-top: 0;
+  }
+}
+
+
+.banner-content {
+  text-align: center;
+  max-width: 820px;
+  margin-top: 100px;
+  padding-bottom: 150px;
+    // width: 592px;
+}
+
+.ventures-list {
+
+  padding-bottom: 160px;
+  &_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  img {
+    width: 100%;
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+  }
+  h2 {
+    // margin-top: 54px;
+    @include bold();
+    font-size: 50px;
+    color: #020926
+  }
+  h3 {
+    @include italic();
+    font-size: 320px;
+    color: #b7b7b7;
+    opacity: 0.1;
+    margin-top: -170px;
+  }
+  p {
+    @include bold();
+    font-size: 20px;
+    margin-top: 36px;
+    max-width: 460px;
+    margin-bottom: 30px;
+    color: #020926
+  }
+
+  a {
+    @include regular();
+    color: #2649db;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 2px solid #707070;
+    padding-bottom: 6px;
+    img {
+      width: 10px;
+      height: 10px;
+      margin-left: 5px;
+      margin-top: 0;
+    }
+  }
+}
+
+.ventures-list-custom {
+  p{
+    max-width: 705px;
+  }
+}
+.ventures-list a:hover{
+  border-bottom: 2px solid #2649db;
+}
+
+// blog
+.exp{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.blog-image{
+  width: 926px;
+}
+.design h3{
+  @include bold();
+  font-size: 25px;
+  color: #020926;
+}
+.design p{
+  @include italic();
+  font-size: 16px;
+  color: #222222;
+  margin-top: 15px;
+}
+.design{
+  border-left: 5px solid #2649db;
+  padding-left: 10px;
+}
+.design-how__to{
+  align-items: center;
+}
+.design-how__to{
+  margin-top: 100px;
+}
+.design__one h1{
+  @include bold();
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.group-o{
+  width: 521px;
+}
+.design-one{
+  margin-bottom: 120px;
+}
+.straight-line_grey{
+  border-bottom: 1px solid #DBDBDB;
+  width: 280px;
+  margin-bottom: 28px;
+}
+.design-tem{
+  width: 62px;
+}
+.design-date h2{
+  @include bold();
+  font-size: 18px;
+  margin-top:3px;
+}
+.design-date p{
+  @include bold();
+  font-size: 14px;
+  color: #575B6E;
+}
+.design-date{
+  padding-left: 23px;
+}
+.finding-balance{
+  margin-top: 60px;
+  p{
+    font-size: 14px;
+    @include regular();
+    max-width: 497px;
+    color: #575B6E;
+    margin-bottom: 35px;
+  }
+}
+.finding-balance h1{
+@include bold();
+font-size: 30px;
+margin-bottom: 40px;
+}
+.circle-blog{
+  margin-left: 0px!important;
+}
+.logo-white{
+  width: 200px;
+}
+.ventures-about{
+  @include regular();
+  font-size: 18px;
+  text-align: center;
+  max-width: 630px!important;
+}

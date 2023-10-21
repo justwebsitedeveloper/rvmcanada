@@ -1,0 +1,141 @@
+.canada_home{
+    display:flex;
+    // margin-top: 71px;
+}
+.canada-home-right h1{
+    font-size:65px;
+    @include bold();
+    color:#020926;
+    max-width:579px;
+    margin-top: 150px;
+margin-bottom: 343px;
+}
+.infinity-style{
+    margin-top: 0;
+}
+.canada_tower{
+    width: 649px;
+    margin-top: -325px;
+}
+.canada-home{
+    overflow: hidden;
+}
+.canada-home-right{
+    background-image: url('./../../../../images/Assests/canada/desktop_version/maple_leaf/maple\ leaf\ 1x.png');
+    background-repeat: no-repeat;
+    background-position-y: 234px;
+    background-position-x: -93px;
+}
+.canada-home-left{
+    // background-image: url('./../../../../images/Assests/canada/desktop_version/rvm_loop/loop\ .svg');
+    // background-repeat: no-repeat;
+    // background-position-x: -196px;
+    // margin-top: -396px;
+    // background-position-y: -152px;
+}
+.canada_tower img{
+    padding-top: 471px;
+}
+.navbar-two{
+    background: transparent;
+}
+.canada_home{
+    background-image: url('./../../../../images/Assests/canada/desktop_version/rvm_loop/loop\ .svg');
+    background-repeat: no-repeat;
+    background-position-x: 379px;
+    background-position-y: -520px;
+}
+.social-mob{
+    max-width:472px;
+}
+
+
+@media screen and(max-width:500px) {
+    .canada_home{
+        margin-top: -10px;
+    }
+    .canada-home-right h1{
+        font-size: 22px;
+        max-width: 230px;
+        margin-bottom: 147px;
+    }   
+    .social-mob{
+        max-width:188px;
+    }
+    .part-b p{
+        font-size: 6px!important;
+    }
+    .canada_home{
+        background-size: 286px 204px;
+        background-position-x: 145px;
+        background-position-y: 53px;
+        background-image: url('./../../../../images/Assests/canada/mobile version/canada/loop\ .svg');
+    }
+    .canada-home-right{
+       background-size: 119px 122px;
+       background-position-y: 252px;
+       background-position-x: 15px;
+    }
+    .canada_tower img {
+        padding-top: 497px;
+        width: 709px;
+    }
+    .canada_tower{
+        width: 137px;
+    }
+    .grey-line {
+        margin-top: 13px;
+        margin-bottom: 10px;
+    }
+    .part-b{
+        gap: 15px;
+    }
+    .india-ca{
+        margin-left: 0px!important;
+        margin-right: 15px!important;
+    }
+    .link-part-mob p{
+        font-size: 10px;
+    }
+    .next-previous{
+        display: flex;
+    }
+}
+
+.part-b {
+    display: flex;
+    align-items: baseline;
+    .active {
+      color: #D80621;
+    }
+  }
+  
+  .part-b p {
+    @include medium();
+    font-size: 12px;
+    text-decoration: none;
+    color: #6e6e6e;
+  }
+  .company-head{
+    color:  #2649DB!important;
+}
+  .india {
+    margin-left: 115px;
+    margin-right: 50px;
+    color: #6e6e6e;
+  }
+  .part-b p:hover {
+    color: #D80621;
+  }
+
+  .india:hover{
+    color:#2649DB!important;
+  }
+ @media screen and (max-width:500px) {
+    .india , .canada{
+        font-size: 10px;
+    }
+    .part-b{
+        align-items: center;
+    }
+ }

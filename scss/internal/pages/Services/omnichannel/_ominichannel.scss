@@ -1,0 +1,222 @@
+.omnichannel_design-software h1{
+  font-size: 58px!important;
+}
+.omnichannel_design {
+  padding-top: 125px;
+  h1 {
+    font-size: 70px;
+    @include medium();
+    color: #4a4a4a;
+    padding-bottom: 50px;
+  }
+  .omni-p {
+    font-size: 22px;
+    @include medium();
+    color: #2649db;
+    // padding-bottom: 10px;
+  }
+  &-service {
+    display: flex;
+    justify-content: space-between;
+    .omni-top_img img {
+      width: 100%;
+    }
+    .omni-top_content {
+      margin-right: 30px;
+      padding-top: 70px;
+      h2 {
+        @include italic();
+        font-size: 18px;
+        padding-bottom: 30px;
+        // padding-left: 20px;
+        max-width: 450px;
+        line-height: 24px;
+        color : #4A4A4A;
+      }
+      p {
+        @include regular();
+        font-size: 16px;
+        padding-bottom: 40px;
+        // padding-left: 20px;
+        max-width:361px;
+        line-height: 24px;
+        color: #5A5A5A;
+      }
+      .arrow {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+.area-of-expertise {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  &_info {
+    justify-content: space-between;
+    .expertise-left {
+      &_transparent {
+        margin-top: 70px;
+        margin-left: -137px;
+        p {
+          @include italic();
+          font-size: 12px;
+          text-align: center;
+          
+          color: #4A4A4A;
+        }
+        h3 {
+          @include medium();
+          font-size: 300px;
+          margin-left: -80px;
+          color: rgb(235, 235, 235);
+          margin-top: -90px;
+          margin-left: 50px;
+        }
+       
+      }
+    }
+  }
+  .expertise-left_transparent_ds{
+    padding-left: 285px!important;
+  }
+  .expertise-left_transparent_it{
+    padding-left: 148px!important;
+  }
+  .expertise-left_transparent_sa{
+    padding-left: 270px!important;
+    margin-left: 30px;
+  }
+  .expertise-left_transparent_da{
+    padding-left: 360px!important;
+  }
+  
+  h2 {
+    @include bold();
+    font-size: 50px;
+    padding-bottom: 60px;
+    color : #020926
+  }
+  p {
+    @include italic();
+    font-size: 18px;
+    max-width: 360px;
+    color: #4A4A4A;
+    
+  }
+  
+  .expertise_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 0px 100px;
+ 
+    p {
+      @include medium();
+      font-size: 16px;
+      // padding-bottom: 50px;
+    }
+    .card-list {
+      height: 440px;
+      width: 100%;
+      padding: 0 0 50px 0px;
+      border-top: 2px solid #020926;
+      transition: background-color 500ms ease-in-out;
+   
+
+      a {
+        text-decoration: none;
+      }
+        &:hover{
+          h2 {
+            color: white;
+          }
+          p{
+            color: #B7B7B7;
+          }
+        }
+    
+      &_down {
+        // margin-top: 60px;
+      }
+      &-info {
+        padding: 0 20px 0 20px;
+        cursor: pointer;
+        h2 {
+          font-size: 32px;
+          color: #020926;
+          @include regular();
+          padding-bottom: 30px;
+          transition: color 500ms ease-in-out;
+        }
+        p {
+          @include medium();
+          font-size: 16px;
+          color: #4A4A4A;
+          height: 200px;
+          transition: color 500ms ease-in-out;
+        }
+      }
+      &:hover {
+        background-color: #020926;
+        border-top-color: #2649db;
+        background-image: url("/images/Assests/Services/Omnichannel-design-service/area\ of\ eExpertise\ asstes.svg");
+        background-repeat: no-repeat;
+        // background-position: 150px;
+        background-position-x: 173px;
+        background-position-y: 252px;
+        
+        .circle {
+          $size: 7px;
+          $width: 0.5px;
+
+          border-color: #fff;
+          #arrow_1 .arrow span,
+          #arrow_1 .arrow::before,
+          #arrow_1 .arrow::after {
+            background: white;
+            height: 0.5px;
+          }
+          
+          #arrow_1 {
+            .arrow.arrow--right {
+              span {
+                width: $size * 5.414;
+                right: $size / 1.414 * -8;
+              }
+
+              &:before,
+              &:after {
+                right: $size / 1.414 * -8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .circle_rd-serv {
+    margin-bottom: 20px !important;
+  }
+  .grey-line_expertise {
+    width: 100%;
+    margin-bottom: 50px;
+    // &:hover{
+    //     border: 0.5px solid #2649DB;
+    // }
+  }
+}
+
+
+.nav-three{
+  flex-direction: column;
+  height: 95px;
+}
+.expertise-left p{
+  color:#4A4A4A;
+}
+
+
+.branding-service-card-list {
+  margin-bottom: 30px;
+}

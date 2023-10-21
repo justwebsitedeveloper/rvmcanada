@@ -1,0 +1,227 @@
+.footer-section {
+  margin-bottom: 80px;
+  
+}
+.footer-section_one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social {
+  align-items: center;
+}
+
+.part-footer p {
+  @include medium();
+  font-size: 12px;
+  color: black;
+}
+.part-footer a p:hover {
+  color:#2649db ;
+}
+.india {
+  margin-left: 115px;
+  margin-right: 50px;
+}
+.part-footer p:hover {
+  color: black;
+}
+.links-for-footer {
+  display: flex;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+  }
+}
+.footer-section_two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  h3 {
+
+    @include bold();
+    font-size: 14px;
+  }
+  h4 {
+    @include bold();
+    font-size: 14px;
+  }
+  p {
+    @include regular();
+    font-size: 12px;
+  }
+  
+  &-contact {
+    &-address {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      &:nth-child(2) {
+        margin-top: 55px;
+      }
+      img {
+        padding-top: 3px;
+        margin-right: 20px;
+      }
+      h3 {
+        margin-bottom: 0px;
+      }
+      h4 {
+        margin-bottom: 30px;
+        a {
+          text-decoration: none;
+          color: #2649db
+          // &:hover {
+          //   color: #2649db;
+          // }
+        }
+       
+      }
+      p {
+        font-size: 12px;
+      }
+    
+    }
+    &-details {
+      display: flex;
+      justify-content: space-around;
+      .services a {
+        text-decoration: none;
+        color: black;
+      }
+      .services a p:hover{
+        color: #2649db;
+      }
+      .works a {
+        text-decoration: none;
+        color: black;
+      }
+      .works a p:hover{
+        color: #2649db;
+      }
+      .enquiry a p:hover{
+        color : #2649db;
+      }
+      h3 {
+        margin-bottom: 45px;
+      }
+      p {
+        margin-bottom: 6px;
+      }
+      &-touch {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        h3 {
+          margin-bottom: 45px;
+        }
+        .number {
+          display: flex;
+          // justify-content: end;
+          margin-bottom: 5px;
+          a {
+            text-decoration: none;
+            color: black;
+          }
+          p:first-of-type {
+            // margin-right: 15px;
+            width: 92px;
+          }
+          .footer_number{
+            @include bold();
+          }
+        }
+        .enquiry {
+          justify-content: end;
+          margin-top: 77px;
+          h3 {
+            margin-bottom: 20px;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+          }
+          p {
+            margin-bottom: 5px;
+            
+            
+          }
+          
+          
+        }
+        .enquiry a p:hover{
+            color : #2649db;
+          }
+      }
+    }
+  }
+}
+
+.footer-rights h4 {
+  @include bold();
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-top: 60px;
+}
+
+.grey-line-footer {
+  margin-top: 15px;
+  margin-bottom: 26px;
+  width: 472px;
+  border: 0.5px solid #cecece;
+}
+
+@media screen and (max-width: 768px) {
+  .works {
+    margin-left: 30px;
+  }
+  
+  .footer-section_two-contact-details-touch .enquiry {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grey-line-footer {
+    width: 300px;
+    margin-top: 1px;
+    border: 0.5px solid #cecece;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .footer-rights h4 {
+    font-size: 10px;
+  }
+  .footer-section_two-contact-details {
+    margin-top: 50px;
+  }
+  .footer-section_two-contact-details-touch {
+    margin-top: -120px;
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+  .services h3 {
+    margin-bottom: 20px;
+  }
+  .works h3 {
+    margin-bottom: 20px;
+  }
+  .footer-rights h4 {
+    font-size: 11px;
+  }
+  .grey-line-footer {
+    width: 230px;
+    margin-top: 1px;
+    border: 0.5px solid #cecece;
+  }
+}
+.expertise-left_transparent p{
+  color: black!important;
+}
+
+.footer-section_two-contact{
+padding-left: 0px!important;
+}

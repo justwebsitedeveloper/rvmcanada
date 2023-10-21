@@ -1,0 +1,318 @@
+.projects_ofrvm-heading{
+    margin-top: 70px;
+}
+
+.projects_ofrvm-heading h1{
+    @include bold();
+    font-size: 50px;
+    max-width: 533px;
+    padding-bottom: 70px;
+    
+}
+
+.projects_ofrvm-heading p{
+    @include regular();
+    color: #5A5A5A;
+    font-size: 16px;
+    margin-top: -315px;
+    max-width: 332px;
+    padding-top: 356px;
+}
+.projects_ofrvm-heading h4{
+    @include medium();
+    color: #2649DB;
+    font-size: 22px;
+}
+.project_one{
+    width: 100%;
+    // margin-left: 85px;
+}
+.projects_ofrvm{
+    position: relative;
+  
+}
+.project_board{
+    display: flex;
+    position: absolute;
+    padding-right: 50px;
+    bottom: 0%;
+    margin-left: -156px;
+
+    &-items {
+        height: fit-content;
+        background-color: #020926;
+        align-self: flex-end;
+        width: 330px;
+        padding-right: 20px;
+        background-image: url("/images/Assests/Services/Omnichannel-design-service/area\ of\ eExpertise\ asstes.svg");
+        background-repeat: no-repeat;
+        background-position-x: 231px;
+        background-position-y: 230px;
+
+
+        // border-right: 1px solid #2649DB ;
+    }
+
+    & .popup-slide {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease-in;
+        background-color: #020926;
+        background-image: url("/images/Assests/Services/Omnichannel-design-service/area\ of\ eExpertise\ asstes.svg");
+        background-repeat: no-repeat;
+        background-position-x: -98px;
+        background-position-y: 464.5px;
+        h3{
+            @include bold();
+            font-size: 36px;
+            color: #FFFFFF;
+            padding-top: 117px;
+        }
+        p{
+            @include regular;
+            font-size: 20px;
+            line-height: 27px;
+            color: #ACABAB;
+        }
+    }
+}
+
+
+.gray-scale{
+    border: 0.5px groove #d0d0d094;
+    display: inline-block;
+    width: 119px;
+    height: 0px;
+    margin-bottom: 35px;
+}
+.project-names{
+    margin-left: 50px;
+    cursor: default;
+}
+.project-names h3{
+    font-size: 18px;
+    @include medium();
+    color: #EEEEEE;
+}
+.project-names p{
+    @include medium();
+    font-size: 14px;
+    color: #B7B7B7;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    cursor: pointer;
+    &:hover{
+        color: #FFFFFF;
+    }
+}
+.blue-line{
+    margin-right: 10px;
+    visibility: hidden;
+}
+.project-name__two{
+    margin-top: -25px!important;
+}
+
+.top-name-project{
+    margin-top: 50px;
+}
+.move-arrow{
+    margin-left: 53px; 
+    visibility: hidden;
+    width:100px;
+    height:18.5px;
+    display: flex;
+    margin-top: 17px;
+}
+
+.move-arrow::before {
+    content: "";
+    background: currentColor;
+    width:15px;
+    clip-path: polygon(0 10px,calc(100% - 2px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 2px) calc(100% - 10px),0 calc(100% - 10px));
+    animation: a1 1.5s linear;
+    color: #2649DB;
+  }
+  @keyframes a1 {
+    90%,100%{flex-grow: 1}
+  }
+
+
+.project-names:hover{
+    .move-arrow{
+        visibility: visible;
+    }
+    .arrow-proj{
+        visibility: visible;
+    }
+    .blue-line{
+        visibility: visible;
+    }
+    
+ 
+}
+.projects{
+    margin-bottom: 160px;
+}
+
+.projects-line{
+    height: 380px;
+    margin-top: 43px;
+    border: 0.5px solid #CECECE;
+    width: 0.5px;
+}
+
+.projects-line_blue{
+    height: 200px;
+    margin-top: 233px;
+    margin-left: -2px;
+    border: 0.5px solid #2649DB;
+    width: 0.5px;
+}
+.projects_ofrvm_line{
+    display: flex;
+    align-items: flex-end;
+    
+    p{
+        padding-left: 20px;
+    }
+}
+
+.popup-slide{
+    height:647px;
+    width: 380px;
+    background-color: #020926;
+    color: white;
+    padding-left: 35px;
+    padding-right: 35px;
+.rvm_tech{
+    margin-top: 25px;
+}
+    h2{
+        @include bold();
+        font-size: 36px;
+        padding-top: 126px;
+    }
+    p{
+        @include regular();
+        font-size: 20px;
+        padding-top: 35px;
+    }
+    .circle {
+        border-color: white;
+        padding-top: 25px;
+    }
+    .circle #arrow_1 .arrow::before{
+            background: white;
+            height: 0.5px;
+    }
+    .circle #arrow_1 .arrow::after{
+        background: white;
+        height: 0.5px;
+    }
+    #arrow_1 .arrow span{
+        background: white;
+        height: 0.5px;
+    }
+}
+
+.title a:hover{
+    border-bottom: 1px solid #707070;
+}
+
+.arrow-proj {
+    position: relative;
+    display: inline-block;
+    visibility: hidden;
+    padding: 8px 0;
+    margin-top: 18px;
+    &:before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 1px;
+      background-color: #2649DB;
+      top: 50%;
+      transition: width 0.5s ease-out;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-top: 1px solid #2649DB;
+      border-right: 1px solid #2649DB;
+      transform: rotate(45deg);
+      top: calc(50% - 5px);
+      position: absolute;
+      right: 1px;
+      
+    }
+    &:hover {
+      cursor: pointer;
+      &:before {
+        width: 80px;
+      }
+    }
+  }
+  .project-names:hover{
+    .arrow-proj:hover{
+        cursor: pointer;
+    }
+    .arrow-proj::before{
+        width: 80px;
+    }
+    .get-in-touch{
+        margin-top: 80px;
+    }
+  }
+
+  @media screen and(min-width:501px) {
+    .projects-resp{
+        display: none;
+    }
+  }
+
+  .swiper-project h1{
+    font-size: 16px;
+    @include medium();
+    color: #EEEEEE;
+    padding-bottom: 10px;
+  }
+  .swiper-project h2{
+    font-size: 20px;
+    @include medium();
+    color: #FFFFFF;
+    padding-bottom: 30px;
+  }
+  .swiper-project p{
+    font-size: 14px;
+    @include regular();
+    line-height: 20px;
+    color: #a7a7a7;
+    max-width: 230px;
+  }
+  .swiper-project{
+    background-color: #020926;
+    padding-top: 50px;
+    padding-left: 29px;
+    text-align: left;
+    padding-right: 69px;
+    padding-bottom: 64px;
+  }
+  .project-para{
+    padding-bottom: 50px;
+  }
+ .swiper-pagination-bullet-active{
+    width: 20px;
+    color: #FFFFFF!important;
+    height: 2px;
+    border-radius: 1%;
+ }
+ .swiper-pagination-bullet{
+  
+    height: 2px;
+    border-radius: 1%;
+    color: #a7a7a7!important;
+ }
+

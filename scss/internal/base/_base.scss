@@ -1,0 +1,104 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1256px;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+@media screen and(max-width:426px) {
+  .container {
+    max-width: 350px;
+  }
+}
+@media screen and(max-width:376px) {
+  .container{
+    max-width:350px
+  }
+}
+
+h1 {
+  color: #020926;
+}
+
+.full-bg {
+  background-color: #f0f0f0;
+}
+
+footer {
+  background-color: #f0f0f0;
+}
+
+// Transition btn
+
+.btn {
+  padding-left: 0;
+}
+
+//  scroll top
+
+.scrolltop .icon {
+  font-size: 30px;
+  text-align: center;
+  transform: rotate(0deg);
+  margin-top: 10px;
+}
+
+.scrolltop {
+  position: fixed;
+  bottom: 70px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  // border-radius: 50%;
+  // background-color: #fff;
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.swiper {
+  z-index: unset;
+
+  &-container {
+    z-index: unset;
+  }
+  
+  &-wrapper {
+    z-index: unset;
+  }
+
+  &-button-next, &-button-prev {
+    z-index: unset;
+  }
+}

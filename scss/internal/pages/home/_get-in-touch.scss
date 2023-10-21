@@ -1,0 +1,211 @@
+.get-touch_left h1 {
+  font-size: 50px;
+  @include bold();
+  // color: black;
+  max-width: 306px;
+  margin-top: 85px;
+}
+.get-touch_left p {
+  font-size: 18px;
+  @include regular();
+  color: #4a4a4a;
+  max-width: 339px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+// .get-in-touch p:nth-of-type(2){
+//   margin-top: 0px;
+// }
+.get-in-touch {
+  padding-bottom: 160px;
+}
+.numbers_touch {
+  text-align: center;
+  justify-content: space-between;
+  gap: 69px;
+  padding-top: 37px;
+  padding-bottom: 51px;
+  padding-left: 47px;
+  padding-right: 36px;
+}
+.numbers-touch h1 {
+  .number {
+    @include medium();
+    font-size: 40px;
+    text-align: center;
+    color: #4a4a4a;
+    vertical-align: sub;
+  }
+}
+.numbers-touch h1 {
+  @include medium();
+  font-size: 40px;
+  text-align: center;
+  color: #4a4a4a;
+  vertical-align: sub;
+  span {
+    color: #2649db;
+    font-size: 32px;
+  }
+}
+.numbers-touch p {
+  @include medium();
+  font-size: 18px;
+}
+
+.numb-touch__one {
+  box-shadow: 0 -4px 3px 0 rgba(0, 0, 0, 0.01), 0 6px 30px 0 rgba(0, 0, 0, 0.07);
+  // box-shadow: 0px 3px 0px 0 rgba(0, 0, 0 , 0%), 0 10px 33px 0 rgb(0, 0, 0,  12%);
+}
+.right-img img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .get-touch_left p {
+    max-width: 60%;
+  }
+  .get-touch_left {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .right-img img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .numbers_touch {
+    margin-left: 0px;
+  }
+}
+
+// Form
+.btn:focus {
+  box-shadow: 0 0 0 0 #efefef;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.get-in-touch_modal {
+  .modal {
+    z-index: 1000000;
+  }
+  .modal-body {
+    padding: 0;
+  }
+  .modal-content {
+    background: #efefef;
+    border: none;
+    border-radius: 0;
+  }
+  .form-control {
+    background-color: #efefef;
+  }
+  .btn-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+
+  .reach_out-section {
+    &_left {
+      img {
+        width: 100%;
+      }
+    }
+    &_right {
+      padding-left: 90px;
+      padding-top: 20px;
+
+      form {
+        padding-top: 30px;
+
+        .form-control {
+          border-top: transparent;
+          border-left: transparent;
+          border-right: transparent;
+          border-bottom: 1px solid #707070;
+          border-radius: 0px;
+          padding: 0 0 0px 0;
+          color: black;
+          font-size: 12px;
+          @include regular();
+        }
+
+        div {
+          input {
+            margin-bottom: 24px;
+          }
+        }
+        .form-control:focus {
+          box-shadow: none;
+        }
+        .btn-primary {
+          color: #fff;
+          background-color: black;
+          border-color: black;
+          border-radius: 0;
+          padding: 13px 45px 13px 45px;
+          font-size: 18px;
+          @include regular();
+        }
+        .btn-primary:hover {
+          color: #fff;
+          background-color: black;
+          border-color: black;
+        }
+      }
+
+      label {
+        @include bold();
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+      h2 {
+        @include bold();
+        font-size: 40px;
+        color: #020926;
+      }
+      &-mp {
+        display: flex;
+        justify-content: space-between;
+        .email-info {
+          padding-right: 33px;
+          padding-left: 0px;
+          margin-right: 14px;
+        }
+      }
+      &-info {
+        display: flex;
+        padding-top: 24px;
+        a {
+          text-decoration: none;
+          @include regular();
+          font-size: 14px;
+          color: #020926;
+        }
+        div:first-child {
+          padding-right: 70px;
+        }
+        h3 {
+          @include regular();
+          font-size: 16px;
+          color: #707070;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:500px) {
+  .get-touch_left {
+    margin-bottom: unset;
+  }
+}

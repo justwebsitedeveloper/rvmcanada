@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,4BAAU,AAAA,CACN,UAAU,CAAE,KAAK,CAIpB,AALA,AAEG,4BAFM,CAEN,aAAa,CAAC,GAAG,AAAA,CACb,KAAK,CAAE,IAAI,CACd",
+    "sources": [
+        "../scss/internal/pages/Services/omnichannel/ominichannel.scss"
+    ],
+    "names": [],
+    "file": "ominichannel.css"
+}

@@ -1,0 +1,52 @@
+//external
+
+@import "./external/libraries";
+@import "./external/variables";
+
+// internal
+
+@import "./internal/base/base";
+@import "./internal/base/fonts";
+@import "./internal/base/mixins";
+
+// Common
+@import "./internal/components/footer";
+@import "./internal/components/navigation";
+
+// Pages
+
+// Home
+@import "./internal/pages/home/services";
+@import "./internal/pages/home/ei";
+@import "./internal/pages/home/projects";
+@import "./internal/pages/home/canada";
+@import "./internal/pages/home/empowering";
+@import "./internal/pages/home/get-in-touch";
+@import "./internal/pages/home/awards";
+@import "./internal/pages/home/marquee";
+@import "./internal/pages/home/truelearning";
+@import "./internal/pages/home/faq";
+
+// about
+@import "./internal/pages/about/about";
+
+// Ventures
+@import "./internal/pages/ventures/ventures";
+
+// Intern
+@import "./internal/pages/intern/intern";
+
+// Services--------
+
+// Omnichannel
+@import "./internal/pages/Services/omnichannel/ominichannel";
+
+// brandingservice
+@import "./internal/pages/Services/brandingservice/brandingdesign";
+
+// Research
+@import "./internal/pages/research/research";
+
+
+@import "./internal/pages/home/responsive";
+@import "./internal/pages/home/responsive-two";

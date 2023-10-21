@@ -1,0 +1,207 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide_awards {
+  background-color: #f0f0f0;
+}
+.swiper-slide img {
+  display: block;
+  // width: 512px;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide {
+  width: 93%;
+}
+.swiper-slide:nth-child(2n) {
+  // width: 77%;
+}
+.swiper-slide:nth-child(3n) {
+  // width: 77%;
+}
+.swiper-slide:nth-child(4n) {
+  // width: 77%;
+}
+
+.bg-img {
+  background-image: url("./../../../../images/awards/rvmimg.png");
+  // width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 328px;
+  margin-top: 394px;
+}
+
+.awards-we_encoutered {
+  padding-left: 85px;
+  text-align: left;
+  padding-right: 325px;
+  // margin-top: -400px;
+
+  h1 {
+    @include bold();
+    font-size: 50px;
+    max-width: 309px;
+
+    margin-top: 50px;
+  }
+  h5 {
+    @include medium();
+    font-size: 18px;
+    color: #2649db;
+    margin-top: 114px;
+  }
+  h3 {
+    @include medium();
+    font-size: 37px;
+
+    max-width: 309px;
+  }
+  p {
+    @include medium();
+    font-size: 17px;
+    max-width: 316px;
+    color: #5a5a5a;
+    line-height: 24px;
+    margin-top: 44px;
+    margin-bottom: 52px;
+  }
+}
+.skills-awards {
+  justify-content: space-between;
+  gap: 22px;
+  p {
+    text-decoration: underline;
+    text-decoration-color: #cccccc;
+    color: #b7b7b7;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    &:hover {
+      cursor: pointer;
+      // color: #2649DB;
+    }
+  }
+}
+.hightlight-skills {
+  text-decoration-color: #2649db !important;
+  color: black !important;
+}
+.awards {
+  margin-bottom: 160px;
+}
+
+// people in performance
+.performance_line {
+  height: 190px;
+  border: 0.5px solid #cecece;
+  width: 0.5px;
+  margin-bottom: 30px;
+}
+.performance h1 {
+  @include bold();
+  font-size: 50px;
+  margin-bottom: 22px;
+}
+.join-us{
+  @include regular();
+  font-size: 18px;
+  color: #2649DB;
+}
+.people-in-performance {
+  margin-bottom: 160px;
+  img {
+    margin-top: -50px;
+  }
+}
+.performance p {
+  @include regular();
+  font-size: 18px;
+  max-width: 488px;
+  margin-bottom: 30px;
+  color: #4a4a4a;
+}
+.performance_img {
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .performance h1 {
+    margin-bottom: 50px;
+  }
+  .performance p {
+    max-width: 100%;
+  }
+  .people-in-performance img {
+    margin-top: 0;
+  }
+  .performance_img img {
+    width: 100%;
+  }
+  .performance p {
+    font-size: 14px;
+  }
+}
+
+// Responsive
+
+.margin-top {
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  border-radius: 12px;
+}
+
+.left-align {
+  border-top: 12px;
+  display: flex;
+  justify-content: center;
+  border-top: 12px;
+}
+.awards-one{
+  display: flex;
+}
+.skills-awards{
+  display: flex;
+}
+.awards-one{
+  background-image: url('./../../../../images/Assests/RVM_Logo-F-01.png');
+  background-repeat: no-repeat;
+background-position: bottom;
+background-position-x: 556px;
+}
+@media screen and(max-width:770px) {
+  .awards-one{
+    flex-direction: column;
+  }
+  .awards-one img{
+    width: 500px;
+    height: 680px;
+}
+.awards-we_encoutered h5{
+  font-size: 30px;
+}
+// line check common
+.performance_line{
+  display: none;
+}
+}

@@ -1,0 +1,394 @@
+.service_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 88px;
+  height: 350px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.service-card_one {
+  background-color: transparent;
+  width: 302px;
+  transition: all 400ms ease-in-out;
+
+  &:hover {
+    background-color: rgb(255 255 255 / 65%);
+    transform: scale(1.05);
+    box-shadow: 0 1px 0px 0 rgba(39, 39, 39, -0.17);
+    transition: all 800ms cubic-bezier(0.19, 0.30, 0.22, 2);
+    cursor: pointer;
+    margin-top: 6px;
+    .circle {
+      $size: 7px;
+      $width: 0.5px;
+      #arrow_1 {
+        .arrow.arrow--right {
+          span { 
+            width: $size * 5.414;
+            right: $size / 1.414 * -8;
+          }
+
+          &:before,
+          &:after {
+            right: $size / 1.414 * -8;
+          }
+        }
+      }
+    }
+  }
+  &-img {
+    background-color: none;
+  }
+  h3 {
+    color: #2649db;
+    font-size: 16px;
+    @include medium();
+    margin-top: 29px;
+    margin-bottom: 10px;
+    margin-left: 23px;
+  }
+  p {
+    color: #4a4a4a;
+    font-size: 24px;
+    @include regular();
+    margin-bottom: 30px;
+    line-height: 28px;
+    margin-left: 23px;
+  }
+}
+.arrow-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  // text-align: center;
+  top: 16.5px;
+  left: 19px;
+}
+.arrow-wrapper:hover h1 {
+  opacity: 1;
+}
+
+/***************
+   * Arrow 1
+   ***************/
+
+#arrow_1 .arrow {
+  $size: 7px;
+  $width: 1.5px;
+
+  cursor: pointer;
+  display: block;
+  width: $size / 1.414;
+  height: $size / 1.414 * 2;
+  position: relative;
+
+  & span,
+  &:before,
+  &:after {
+    background: #2649db;
+    content: "";
+    display: block;
+    width: $size;
+    height: $width;
+    position: absolute;
+    top: calc(50% - (#{$width} / 2));
+  }
+
+  &:before {
+    transform: rotate(-45deg);
+  }
+  &:after {
+    transform: rotate(45deg);
+  }
+
+  & span {
+    width: 0;
+  }
+  .circle:hover & {
+    & span {
+      width: 68px;
+    }
+  }
+
+  @each $direction in "left" "right" {
+    &.arrow--#{$direction} {
+      & span,
+      &:before,
+      &:after {
+        #{$direction}: 0;
+        transform-origin: #{$direction} 50%;
+      }
+
+      &:before,
+      &:after {
+        transition: #{$direction} 0.3s 0.05s;
+      }
+
+      & span {
+        transition: width 0.3s, #{$direction} 0.3s 0.05s;
+      }
+
+      .circle:hover & {
+        & span,
+        &:before,
+        &:after {
+          #{$direction}: -69px;
+        }
+      }
+    }
+  }
+}
+
+/***************
+   * Arrow 2
+   ***************/
+
+// #arrow_2 .arrow {
+//   $size: 10px;
+//   $width: 2px;
+
+//   &.arrow--right {
+//     text-align: right;
+//   }
+//   &.arrow--right:before {
+//     left: 0;
+//     transform: rotate(45deg);
+//     transition: left 0.3s 0.2s;
+//   }
+//   &.arrow--right:hover:before {
+//     left: 100%;
+//     transition: left 0.3s;
+//   }
+
+//   &:hover {
+//     transform: none;
+//   }
+// }
+.circle {
+  height: 44px;
+  width: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 1px solid black;
+  // margin-left: 23px;
+  margin-bottom: 34px;
+}
+
+.card-img {
+  width: 301px;
+  height: 160px;
+  border-radius: unset;
+}
+
+@media screen and(max-width:500px) {
+  .card-img{
+    width:156px;
+    height: 112px;
+  }
+}
+
+.endless h1 {
+  @include bold();
+  font-size: 90px;
+  line-height: 90px;
+}
+@media screen and(max-width:500px) {
+  .endless h1 {
+    font-size: 50px;
+    line-height: 54px;
+  }
+  .part-a p{
+    font-size: 10px!important;
+  }
+}
+.part-a {
+  display: flex;
+  align-items: baseline;
+  .active {
+    color: #D80621;;
+  }
+}
+
+.part-a p {
+  @include medium();
+  font-size: 12px;
+  text-decoration: none;
+  // color: #2649db;
+}
+.india {
+  margin-left: 115px;
+  margin-right: 50px;
+}
+.part-a p {
+  color: #2649db;
+}
+.social-media {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.grey-line {
+  margin-top: 15px;
+  margin-bottom: 26px;
+  width: 472px;
+  border: 0.5px solid #cecece;
+}
+.links-for-socials {
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+  }
+}
+.social_media-two {
+  align-self: center;
+  margin-top: 40px;
+}
+.services-home {
+  padding-top: 170px;
+  padding-bottom: 88px;
+  background-image: url("./../../../../images/Assests/cloud-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: 0% 40%;
+  // height: 100%;
+}
+@media screen and (min-width: 1700px) {
+  .services-home {
+    background-position: 0% 60%;
+  }
+}
+// research and development
+.research_dev {
+  text-align: center;
+  h1 {
+    font-size: 50px;
+    @include bold();
+  }
+  p {
+    font-size: 18px;
+    @include medium();
+    max-width: 558px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #4a4a4a;
+  }
+}
+
+.circle_rd {
+  margin-bottom: 0px !important;
+}
+
+.randd {
+  margin-bottom: 160px;
+}
+
+// Endless Innnovation
+.endless-innovation {
+  margin-top: -100px;
+  margin-bottom: 160px;
+}
+// .web_link {
+  .india {
+    @include medium();
+    font-size: 12px;
+    color: #6e6e6e;
+    position: relative;
+    padding-left: 5px;
+    transition: width 1s ease-out;
+    &::before {
+      content: "";
+      border-bottom: 1px solid #2649db;
+      width: 0px;
+      position: absolute;
+      top: -2px;
+      transition: width .5s ease-in-out;
+    }
+    &.active {
+      background-color: transparent;
+    }
+    &.active::before {
+      content: "";
+      width: 16px;
+    }
+    &:hover {
+      &::before {
+        width: 16px;
+      }
+    }
+  }
+// }
+.web_link a{
+  text-decoration: none;
+}
+
+.canada {
+  
+    @include medium();
+    font-size: 12px;
+    color: #6e6e6e;
+    position: relative;
+    // padding-left: 5px;
+    transition: width 1s ease-out;
+    &::before {
+      content: "";
+      border-bottom: 1px solid #D80621;
+      width: 0px;
+      position: absolute;
+      top: -2px;
+      transition: width .5s ease-in-out;
+    }
+    &.active {
+      background-color: transparent;
+    }
+    &.active::before {
+      content: "";
+      width: 16px;
+    }
+    &:hover {
+      &::before {
+        width: 16px;
+      }
+    }
+  }
+
+.canada:hover{
+  color: #D80621;
+}
+@media screen and (max-width: 426px) {
+  .grey-line {
+    width: 100%;
+  }
+  .social_media-two {
+    margin-top: 60px;
+  }
+  // .endless h1 {
+  //   font-size: 70px;
+  // }
+}
+@media screen and (max-width: 376px) {
+  // .endless h1 {
+  //   font-size: 60px;
+  // }
+}
+.empowe-heading{
+  font-size: 50px;
+  @include bold();
+}
+
+.services-home h2{
+  text-align: center;
+  @include bold();
+  font-size: 50px;
+  color: #020926;
+  padding-bottom: 60px;
+}

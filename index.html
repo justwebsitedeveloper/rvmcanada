@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | RV Matrix</title>
+  <link rel="icon" type="" href="/favicon.ico">
+  <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+  <div class='top'></div>
+  <!-- Modal -->
+  <section class="get-in-touch_modal">
+    <div class="modal fade" id="get-in-touch-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close col-12" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="row reach_out-section">
+              <div class="col-5 reach_out-section_left">
+                <img src="./images/Assests/Contact/image@1x.jpg"
+                  srcset="./images/Assests/Contact/image@3x.jpg 3x, ./images/Assests/Contact/image@2x.jpg 2x" alt="">
+              </div>
+              <div class="col-6 reach_out-section_right">
+                <div>
+                  <h2>Get in Touch with Us!</h2>
+                  <form id="get-in-touch" onsubmit="getInTouch(event)">
+                    <div class="">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+                    </div>
+                    <div class="reach_out-section_right-mp">
+                      <div class="col-md-06 email-info">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your Email" id="email" />
+                      </div>
+                      <div class="col-md-6 phone_num">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="number" class="form-control" placeholder="Enter your Phone Number" id="phone">
+                      </div>
+                    </div>
+                    <div>
+                      <label for="message" class="form-label">Message</label>
+                      <input type="text" class="form-control" placeholder="Enter your Message" id="message">
+                    </div>
+                    <button onclick type="submit" class="btn btn-primary swal.fire">Submit</button>
+                  </form>
+                  <div class="reach_out-section_right-info">
+                    <div>
+                      <h3>Call us</h3>
+                      <a href="tel:93802 99990">+91 93802 99990</a>
+                    </div>
+                    <div>
+                      <h3>Or write us</h3>
+                      <a href="mailto:contact@rvmatrix.in">contact@rvmatrix.in</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <header>
+    <div class='top'></div>
+    <section>
+      <div id="myNav" class="overlay">
+
+        <div class="overlay-content">
+          <div class="container">
+
+            <div class="side-navigation">
+              <div class="side-navigation_head">
+                <a href="/"><img class="side-nav-logo logo-white"
+                    src="./images/Assests/nav-bar/RVM-logo-white-final.svg" alt="">
+                </a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img
+                    src="./images/Assests/Logo/close.png" alt="" srcset="" /><span>CLOSE</span></a>
+              </div>
+
+
+              <div class="side_nav">
+                <div class="separator col-md-2 side_nav-link">
+                  <div class="side_nav-web">
+                    <a class="" href="https://rvmdemo.rvmatrix.in/">India</a>
+                    <a class="canada_text active" href="http://rvmwebsite.rvmatrix.ca/">Canada</a>
+                  </div>
+                  <h2>Services</h2>
+                  <img src="./images/Assests/Loops/loop2@1x.png" alt="">
+                </div>
+                <div class="separator col-md-6 side_nav-services">
+                  <a href="./omnichannel.html"><span>01</span>Omnichannel Design Service</a>
+                  <a href="./it-staff-arguments.html"><span>02</span>IT Staff Agumentation</a>
+                  <a href="./softwareapplication.html"><span>03</span>Enterprise Solutions</a>
+                  <a href="./dataanalytics.html"><span>04</span>Data And Analytics</a>
+                  <a href="./research-development.html"><span>05</span>Research and Development </a>
+                </div>
+                <div class="col-md-3 side_nav-pages">
+                  <div class="side_nav-pages-links">
+                    <div class="side_nav-pages-list">
+                      <a href="/" class="active">Home</a>
+                      <a href="./about.html">About Us</a>
+                      <!-- <a href="">Works</a> -->
+                      <a href="http://13.127.229.36/careers">Careers</a>
+                      <a href="./intern.html">Internship</a>
+                      <a href="./ventures.html">Ventures</a>
+                      <a href="https://blog.rvmatrix.in/" target="_blank">Blog</a>
+
+                    </div>
+                    <div class="side_nav-pages-social">
+                      <a target="_blank" href="https://www.facebook.com/RVMatrix">Fb</a>
+                      <a target="_blank" href="https://instagram.com/rvmatrix_global?igshid=YmMyMTA2M2Y=">In</a>
+                      <a target="_blank" href="https://twitter.com/RV_Matrix">Tw</a>
+                      <a target="_blank" href="https://www.linkedin.com/company/rvmatrix/">Ln</a>
+                    </div>
+                  </div>
+                  <div class="side_nav-pages-info">
+                    <div class="side_nav-pages-info1">
+                      <h3>Call us</h3>
+                      <a href="tel:93802 99990">+91 93802 99990</a>
+                    </div>
+                    <div class="side_nav-pages-info2">
+                      <h3>Or write to us</h3>
+                      <a href="mailto:contact@rvmatrix.in">contact@rvmatrix.in</a>
+                    </div>
+                  </div>
+                  <div class="side_nav-pages-info3">
+                    <p>RV Matrix Software Technologies Pvt. Ltd</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-2 seprate-line_mob">
+                  <!-- <h3 class="nav-head-mob">Services</h3> -->
+                </div>
+                <div class="col-10">
+                  <div class="nav-mob-rvm">
+                    <div class="nav-links">
+                      <a href="./omnichannel.html"><span>01</span>Omnichannel Design Service</a>
+                      <a href="./it-staff-arguments.html"><span>02</span>IT Staff Agumentation</a>
+                      <a href="./softwareapplication.html"><span>03</span>Enterprise Solutions</a>
+                      <a href="./dataanalytics.html"><span>04</span>Data And Analytics</a>
+                      <a href="./research-development.html"><span>05</span>Research and Development </a>
+                      <div class="home-mob-nav">
+                        <a href="/" class="active">Home</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="http://13.127.229.36/careers">Careers</a>
+                        <a href="./intern.html">Internship</a>
+                        <a href="./ventures.html">Ventures</a>
+                        <a href="https://blog.rvmatrix.in/" target="_blank">Blog</a>
+                      </div>
+                      <div class="social-mob d-flex">
+                        <a target="_blank" href="https://www.facebook.com/RVMatrix">Fb</a>
+                        <a target="_blank" href="https://www.linkedin.com/company/rvmatrix/">In</a>
+                        <a target="_blank" href="https://twitter.com/RV_Matrix">Tw</a>
+                        <a target="_blank" href="https://www.linkedin.com/company/rvmatrix/">Ln</a>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div class="side_nav-pages-info1">
+                          <h3>Call us</h3>
+                          <a href="tel:93802 99990">+91 93802 99990</a>
+                        </div>
+                        <img src="./images/Assests/footer-rvm/india.svg">
+                      </div>
+                      <div class="d-flex justify-content-between mt-3">
+                        <div class="side_nav-pages-info1">
+                          <h3>Or write to us</h3>
+                          <a href="mailto:contact@rvmatrix.in">contact@rvmatrix.in</a>
+                        </div>
+                        <img src="./images/Assests/footer-rvm/canada.svg">
+                      </div>
+                      <p class="company-name">RV Matrix Software Technologies Pvt. Ltd</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-two navbar-expand-lg navbar-custom fixed-top">
+        <div class="container conatiner__nav">
+          <div class="container primary-nav-contain">
+            <a class="navbar-brand" href="/">
+              <div class="navbar-brand-img"><img src="./images/Assests/Logo/RVM-logo-2022.svg" alt="logo"
+                  class="new-logo-web"></div>
+            </a>
+            <div class="offcanvas-body">
+              <span class="menu-font" onclick="openNav()"><img class="menu-bar" src="./images/Assests/Logo/menu.svg">
+                MENU
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+  </header>
+
+  <main class="full-bg">
+    <section class="canada-home">
+      <div class="container">
+        <div class="canada_home">
+          <div class="canada-home-right">
+            <h1>
+              Enabling the
+              future for everyone
+            </h1>
+            <div class="social_media-two">
+              <div class="social-mob">
+                <div class="part-b">
+                  <p class="company-head">RV Matrix Software Technologies Pvt. Ltd</p>
+                  <div class="web_link">
+                    <a class="india india-ca" href="https://rvmdemo.rvmatrix.in/" target="_blank">
+                      India
+                    </a>
+                    <a class="canada active" href="http://rvmwebsite.rvmatrix.ca/" target="_blank">
+                      Canada
+                    </a>
+                  </div>
+
+                </div>
+                <div class="grey-line"></div>
+                <div class="part-footer links-for-footer link-part-mob">
+                  <a href="https://www.facebook.com/RVMatrix" target="_blank">
+                    <p>Fb</p>
+                  </a>
+                  <a href="https://instagram.com/rvmatrix_global?igshid=YmMyMTA2M2Y=" target="_blank">
+                    <p>In</p>
+                  </a>
+                  <a href="https://twitter.com/RV_Matrix" target="_blank">
+                    <p>Tw</p>
+                  </a>
+                  <a href="https://www.linkedin.com/company/rvmatrix/" target="_blank">
+                    <p>Ln</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="canada-home-left">
+            <div class="canada_tower">
+              <img src="./images/Assests/canada/desktop_version/cn_tower/cn_tower_1.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="services-home">
+      <div class="container">
+        <h2>Empowering Industries</h2>
+        <div class="service_cards">
+          <a href="./omnichannel.html">
+            <div class="service-card_one">
+              <div class="service-card_one-img">
+                <img class="card-img" src="./images/Assests/Home page/Services/Omnichanneldesignservice@1x.png"
+                  srcset="./images/Assests/Home page/Services/Omnichanneldesignservice@2x.png 3x, ./images/Assests/Home page/Services/Omnichanneldesignservice@2x.png 2x">
+              </div>
+
+              <h3>Digital Transformation</h3>
+              <p>Omnichannel<br>
+                Design Services</p>
+
+              <span class="circle circle__resp">
+                <div id="arrow_1" class="arrow-wrapper wrap__resp">
+                  <div class="arrow arrow--right arrow__resp">
+                    <span></span>
+                  </div>
+                </div>
+              </span>
+
+            </div>
+          </a>
+          <a href="./it-staff-arguments.html">
+            <div class="service-card_one">
+              <img class="card-img" src="./images/Assests/Home page/Services/ITstaffagumentation@1x.png"
+                srcset="./images/Assests/Home page/Services/ITstaffagumentation@3x.png 3x, ./images/Assests/Home page/Services/ITstaffagumentation@2x.png 2x">
+              <h3>People and Talent</h3>
+              <p>IT Staff <br>
+                Augmentation</p>
+
+              <span class="circle circle__resp">
+                <div id="arrow_1" class="arrow-wrapper wrap__resp">
+                  <div class="arrow arrow--right arrow__resp">
+                    <span></span>
+                  </div>
+                </div>
+              </span>
+
+            </div>
+          </a>
+          <a href="./softwareapplication.html">
+            <div class="service-card_one">
+
+              <img class="card-img" src="./images/Assests/Home page/Services/softwareapllication@1x.png"
+                srcset="./images/Assests/Home page/Services/softwareapllication@3x.png 3x, ./images/Assests/Home page/Services/softwareapllication@2x.png 2x">
+              <h3>Code to Decode</h3>
+              <p class="extra-down">Enterprise Solutions</p>
+
+              <span class="circle circle__resp">
+                <div id="arrow_1" class="arrow-wrapper wrap__resp">
+                  <div class="arrow arrow--right arrow__resp">
+                    <span></span>
+                  </div>
+                </div>
+              </span>
+            </div>
+          </a>
+          <a href="./dataanalytics.html">
+            <div class="service-card_one">
+              <img class="card-img" src="./images/Assests/Home page/Services/Data&analytics@1x.png"
+                srcset="./images/Assests/Home page/Services/Data&analytics@3x.png 3x, ./images/Assests/Home page/Services/Data&analytics@2x.png 2x">
+              <h3>Information Identity</h3>
+              <p class="extra-down">Data and Analytics</p>
+
+              <span class="circle circle__resp">
+                <div id="arrow_1" class="arrow-wrapper wrap__resp">
+                  <div class="arrow arrow--right arrow__resp">
+                    <span></span>
+                  </div>
+                </div>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Endless Innovation -->
+    <!-- <section class="endless-innovation">
+      <div class="container social-media d-flex">
+        <div class="endless">
+          <h1>Endless</h1>
+          <h1>Innovation</h1>
+        </div>
+        <div class="social_media-two">
+          <div>
+            <div class="part-a">
+              <p>RV Matrix Software Technologies Pvt. Ltd</p>
+              <div class="web_link">
+                <a class="india" href="https://rvmdemo.rvmatrix.in/" target="_blank">
+                  India
+                </a>
+                <a class="canada active" href="http://rvmwebsite.rvmatrix.ca/" target="_blank">
+                  Canada
+                </a>
+              </div>
+
+            </div>
+            <div class="grey-line"></div>
+            <div class="part-footer links-for-footer">
+              <a href="https://www.facebook.com/RVMatrix" target="_blank">
+                <p>Fb</p>
+              </a>
+              <a href="https://instagram.com/rvmatrix_global?igshid=YmMyMTA2M2Y=" target="_blank">
+                <p>In</p>
+              </a>
+              <a href="https://twitter.com/RV_Matrix" target="_blank">
+                <p>Tw</p>
+              </a>
+              <a href="https://www.linkedin.com/company/rvmatrix/" target="_blank">
+                <p>Ln</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Randd -->
+
+    <section class="randd">
+      <div class="container">
+        <div class="research_dev">
+          <img src="./images/Assests/Home page/r-factor.svg">
+          <p>We invest in the nonstop pursuit of knowledge to craft the finest products for our customers and community.
+          </p>
+          <img src="./images/Assests/Home page/r_factor_two.png" class="r-factor_img">
+          <p>RV Matrix believes in changing your view on what IT companies do. We aim to be a group of innovators
+            working in Niche areas and continue to create value.
+            This has established a great sense of confidence in our clients and they continue to be with us. We believe
+            in carving a nonpareil space in the industry.</p>
+          <a href="./research-development.html">
+            <span class="circle circle_rd">
+              <div id="arrow_1" class="arrow-wrapper">
+                <div class="arrow arrow--right">
+                  <span></span>
+                </div>
+              </div>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Empowering Industries -->
+    <section class="empowering_industries">
+      <div class="container">
+        <div class="next_previous">
+          <div>
+            <h1 class="empowe-heading">Empowering Industries</h1>
+          </div>
+          <div class="next-previous">
+            <p class="btn btn-Previous" id="backbtn">Previous</p>
+            <p class="btn btn-Next" id="nextbtn">Next</p>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id='tab2-1'>
+                <div>
+                  <div class="swiper-slide empowe-slide">
+                    <div class="empower-slider">
+                      <div class="row">
+                        <div class="col-8 empower-slider_left">
+                          <div class="empower-slider_left-info">
+                            <h2><span>01 <div style="display:inline-block"></div> </span>BFSI</h2>
+
+                        <img class="empower-img1"
+                          src="
+                          ./images/Assests/Home page/EI/PWC/priscilla-du-preez-XkKCui44iM0-unsplash.jpg" alt="">
+                      </div>
+
+                      <div>
+                        <img class="empower-img2"
+                          src="./images/Assests/Home page/EI/PWC/josh-calabrese-Ev1XqeVL2wI-unsplash.jpg" alt="">
+                      </div>
+
+                        </div>
+                        <div class="col-4 empower-slider_right">
+                          <h1>01</h1>
+                          <p>A web and mobile application for a global clothing manufacturer and designer.</p>
+                          <div class="intern_btn next-prev_button ei2">
+                            <div class="arrow_btn">
+                              <div class="swiper-button-prev empowering-button-prev" id="button-prev"></div>
+                              <div class="swiper-button-next empowering-button-next" id="button-next"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade show" id='tab2-2'>
+                <div>
+                  <div class="swiper-slide empowe-slide">
+                    <div class="empower-slider">
+                      <div class="row">
+                        <div class="col-8 empower-slider_left">
+                          <div class="empower-slider_left-info">
+                            <h2><span>02 <div style="display:inline-block"></div> </span>Hardware Sim System</h2>
+                            <img class="empower-img1"
+                              src="./images/Assests/Home page/EI/Trojan/eddie-kopp-ZkRVjJivs9Q-unsplash.jpg" alt="">
+                          </div>
+
+                      <div>
+                        <img class="empower-img2"
+                          src="./images/Assests/Home page/EI/Trojan/xr-expo-sTdZIYiWwuA-unsplash.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-4 empower-slider_right">
+                      <h1>02</h1>
+                      <p>Trojan Technologies is a London, Ontario-based wastewater treatment
+                         and water purification companyenable customers.</p>
+                      <div class="intern_btn next-prev_button ei2">
+                        <div class="arrow_btn">
+                          <div class="swiper-button-prev empowering-button-prev" id="button-prev2"></div>
+                          <div class="swiper-button-next empowering-button-next" id="button-next2"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show" id='tab2-3'>
+            <div>
+              <div class="swiper-slide empowe-slide">
+                <div class="empower-slider">
+                  <div class="row">
+                    <div class="col-8 empower-slider_left">
+                      <div class="empower-slider_left-info">
+                        <h2><span>03 <div style="display:inline-block"></div> </span>BFSI</h2>
+                        <img class="empower-img1"
+                          src="
+                          ./images/Assests/Home page/EI/FLS/microsoft-365-kTFmwxkF5bQ-unsplash.jpg" alt="">
+                      </div>
+
+                      <div>
+                        <img class="empower-img2"
+                          src="./images/Assests/Home page/EI/FLS/carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-4 empower-slider_right">
+                      <h1>03</h1>
+                      <p>An Intelligent IT-support Chatbot application which was built to simulate
+                        a human-like conversation to interact with the internal team and vendors.</p>
+                      <div class="intern_btn next-prev_button ei2">
+                        <div class="arrow_btn">
+                          <div class="swiper-button-prev empowering-button-prev" id="button-prev3"></div>
+                          <div class="swiper-button-next empowering-button-next" id="button-next3"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show" id='tab2-4'>
+            <div>
+              <div class="swiper-slide empowe-slide">
+                <div class="empower-slider">
+                  <div class="row">
+                    <div class="col-8 empower-slider_left">
+                      <div class="empower-slider_left-info">
+                        <h2><span>04 <div style="display:inline-block"></div> </span>IOT Simulators</h2>
+                        <img class="empower-img1"
+                          src="
+                          ./images/Assests/Home page/EI/Fujitech/sean-pollock-PhYq704ffdA-unsplash.jpg" alt="">
+                      </div>
+
+                      <div>
+                        <img class="empower-img2"
+                          src="./images/Assests/Home page/EI/Fujitech/christian-wiediger-PSmDDeXaEWE-unsplash.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-4 empower-slider_right">
+                      <h1>04</h1>
+                      <p>An IOT based project which was created explicitly for the lift manufacturer.</p>
+                      <div class="intern_btn next-prev_button ei2">
+                        <div class="arrow_btn">
+                          <div class="swiper-button-prev empowering-button-prev" id="button-prev4"></div>
+                          <div class="swiper-button-next empowering-button-next" id="button-next4"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show" id='tab2-5'>
+            <div>
+              <div class="swiper-slide empowe-slide">
+                <div class="empower-slider">
+                  <div class="row">
+                    <div class="col-8 empower-slider_left">
+                      <div class="empower-slider_left-info">
+                        <h2><span>05 <div style="display:inline-block"></div> </span>BFSI</h2>
+                        <img class="empower-img1"
+                          src="./images/Assests/Home page/EI/EY/campaign-creators-gMsnXqILjp4-unsplash.jpg" alt="">
+                      </div>
+
+                      <div>
+                        <img class="empower-img2"
+                          src="./images/Assests/Home page/EI/EY/scott-graham-5fNmWej4tAA-unsplash.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-4 empower-slider_right">
+                      <h1>05</h1>
+                      <p>The company's focus is the research, development and production of industrial enzymes,
+                         microorganisms, and biopharmaceutical ingredients.</p>
+                      <div class="intern_btn next-prev_button ei2">
+                        <div class="arrow_btn">
+                          <div class="swiper-button-prev empowering-button-prev" id="button-prev5"></div>
+                          <div class="swiper-button-next empowering-button-next" id="button-next5"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show" id='tab2-6'>
+            <div>
+              <div class="swiper-slide empowe-slide">
+                <div class="empower-slider">
+                  <div class="row">
+                    <div class="col-8 empower-slider_left">
+                      <div class="empower-slider_left-info">
+                        <h2><span>06 <div style="display:inline-block"></div> </span>Healthcare</h2>
+                        <img class="empower-img1"
+                          src="
+                          ./images/Assests/Home page/EI/govt-india/fusion-medical-animation-EAgGqOiDDMg-unsplash.jpg" alt="">
+                      </div>
+
+                      <div>
+                        <img class="empower-img2"
+                          src="./images/Assests/Home page/EI/govt-india/ashkan-forouzani-ignxm3E1Rg4-unsplash.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-4 empower-slider_right">
+                      <h1>06</h1>
+                      <p style="top:44%;">A mobile and web-based telemedicine
+                        application which was launched by the Govt of Tamil Nadu to provide state-level data on all
+                        the COVID cases spread in the respective districts and containment zones, and also provide
+                        outbreak reports.
+                      </p>
+                      <div class="intern_btn next-prev_button ei2">
+                        <div class="arrow_btn">
+                          <div class="swiper-button-prev empowering-button-prev" id="button-prev6"></div>
+                          <div class="swiper-button-next empowering-button-next" id="button-next6"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show" id='tab2-7'>
+            <div>
+              <div class="swiper-slide empowe-slide">
+                <div class="empower-slider">
+                  <div class="row">
+                    <div class="col-8 empower-slider_left">
+                      <div class="empower-slider_left-info">
+                        <h2><span>07 <div style="display:inline-block"></div> </span>Staff Augmentation</h2>
+                        <img class="empower-img1"
+                          src="./images/Assests/Home page/EI/shell/nathan-forbes-58uZ3FW7FB4-unsplash.jpg" alt="">
+                      </div>
+
+                          <div>
+                            <img class="empower-img2"
+                              src="./images/Assests/Home page/EI/shell/nicholas-jeffway-KamFFp3Ks2c-unsplash.jpg"
+                              alt="">
+                          </div>
+                        </div>
+                        <div class="col-4 empower-slider_right">
+                          <h1>07</h1>
+                          <p>An integrated team which works on a
+                            streamlined on-boarding process that aids in bringing high-demand professionals.
+                          </p>
+                          <div class="intern_btn next-prev_button ei2 ">
+                            <div class="arrow_btn">
+                              <div class="swiper-button-prev empowering-button-prev " id="button-prev7"></div>
+                              <div class="swiper-button-next empowering-button-next" id="button-next7"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade show" id='tab2-8'>
+                <div>
+                  <div class="swiper-slide empowe-slide">
+                    <div class="empower-slider">
+                      <div class="row">
+                        <div class="col-8 empower-slider_left">
+                          <div class="empower-slider_left-info">
+                            <h2><span>08 <div style="display:inline-block"></div> </span>Forensic</h2>
+                            <img class="empower-img1"
+                              src="./images/Assests/Home page/EI/Kwicksoft/george-prentzas-SRFG7iwktDk-unsplash.jpg"
+                              alt="">
+                          </div>
+
+                          <div>
+                            <img class="empower-img2"
+                              src="./images/Assests/Home page/EI/Kwicksoft/hessam-nabavi-VLVamJ2DAQ0-unsplash.jpg"
+                              alt="">
+                          </div>
+                        </div>
+                        <div class="col-4 empower-slider_right">
+                          <h1>08</h1>
+                          <p>KwickSoft’s strategic partnership with RV Matrix Software Technologies Pvt. Ltd, as a Tech
+                            Partner was inked in 2020.</p>
+                          <div class="intern_btn next-prev_button ei2">
+                            <div class="arrow_btn">
+                              <div class="swiper-button-prev empowering-button-prev " id="button-prev8"></div>
+                              <div class="swiper-button-next empowering-button-next" id="button-next8"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="nav nav-pills" id="empowering_slide">
+              <li class="nav-item"><a href="#tab2-1" class="nav-link active" data-toggle='tab'>PWC</a></li>
+              <li class="nav-item"><a href="#tab2-2" class="nav-link" data-toggle='tab'>Trojan</a></li>
+              <li class="nav-item"><a href="#tab2-3" class="nav-link" data-toggle='tab'>FLSmidth</a></li>
+              <li class="nav-item"><a href="#tab2-4" class="nav-link" data-toggle='tab'>Fujitec</a></li>
+              <li class="nav-item"><a href="#tab2-5" class="nav-link" data-toggle='tab'>EY</a></li>
+              <li class="nav-item hide-nav-item"><a href="#tab2-6" class="nav-link" data-toggle='tab'>Govt of India</a>
+              </li>
+              <li class="nav-item"><a href="#tab2-7" class="nav-link" data-toggle='tab'>Shell</a></li>
+              <li class="nav-item novo"><a href="#tab2-8" class="nav-link novozy" data-toggle='tab'>KwickSoft</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+
+    <section class="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 projects_ofrvm-heading">
+            <h4>Recent Works</h4>
+            <h1> RV matrix is working on Technologies that Deliver for the Future. </h1>
+            <div class="projects_ofrvm_line">
+              <div class="projects-line"> </div>
+              <p>Progressing through knowledge and inventions</p>
+            </div>
+          </div>
+          <div class="col-lg-6 projects_ofrvm">
+            <img class="project_one" alt="ev" src="./images/Assests/projects-of-rvm/1.png"
+              srcset="./images/Assests/projects-of-rvm/3.png 3x, ./images/Assests/projects-of-rvm/2.png 2x"
+              id="getImage">
+            <div class="project_board">
+              <div class="project_board-items">
+                <div class="project-names top-name-project">
+                  <h3>Bio Print</h3>
+                  <div class="d-flex">
+                    <p>Bio Human Imaging <br> System
+                    <div style="margin-left: 30px;">
+                      <span class="arrow-proj"></span>
+                    </div>
+                    </p>
+                  </div>
+
+                </div>
+                <div class="gray-scale"></div>
+                <div class="project-names">
+                  <h3> A new way to Communicate</h3>
+                  <div class="d-flex">
+                    <p> A revolutionary <br>system for <br>information sharing
+                    <div style="margin-left:35px;">
+                      <span class="arrow-proj"></span>
+                    </div>
+                    </p>
+                  </div>
+                </div>
+                <div class="gray-scale"></div>
+                <div class="project-names">
+                  <h3>The Original Metaverse</h3>
+                  <div class="d-flex">
+                    <p>Building a Truly Functional Metaverse
+                    <div style="margin-left:75px;">
+                      <span class="arrow-proj"></span>
+                    </div>
+                    </p>
+                  </div>
+                </div>
+                <div style="text-align-last: end;
+                margin-right: -21px; display: none;">
+                  <img src="./images/Assests/projects-of-rvm/project-card-bg.png">
+                </div>
+              </div>
+              <div class="projects-line_blue"> </div>
+
+              <div id="project-description" class="popup-slide">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects-resp">
+      <div class="container">
+        <p class="projects-resp-p">
+          A Multi Million Dollar Digital Property
+          Management System. A Multi Million Dollar
+          Digital Property Management System.
+        </p>
+        <div class="swiper mySwiper-project">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide_project">
+              <div class="swiper-project">
+                <h1>Bio Print</h1>
+                <h2>Bio Human Imaging System</h2>
+                <p>RV Matrix is working with Biometric Imaging Systems Technologies to help Monitor, Identify and
+                  Analyse information in highly secure environments and provide customer insights.</p>
+                <p class="mt-4 project-para">The Design and Engineering team collaborate in this breath taking
+                  opportunity that will enable systematic intelligence to recognition engines. This in turn is
+                  beautifully crafted with Usability Engineering and Experienced with an effective and efficient User
+                  Interface.</p>
+              </div>
+              <div class="swiper-pagination pagination-project"></div>
+            </div>
+            <div class="swiper-slide slide_project">
+              <div class="swiper-project">
+                <h1>A new way to Communicate</h1>
+                <h2>A revolutionary system for information sharing</h2>
+                <p>Imagine a world that can fit into your hand.
+                  Imagine a world of rich information that can be shared
+                  instantly. Imagine a world that can shift and
+                  send Contextual Data to People, Places, and Information
+                  System and can yet be so intuitive in nature. That is the
+                  cohesive experience that the team in RV Matrix
+                  is building for its customers that comprises Personal,
+                  Professional and Needful Communication with Technology
+                  that is as simple as the Internet itself.</p>
+
+              </div>
+              <div class="swiper-pagination pagination-project"></div>
+            </div>
+            <div class="swiper-slide slide_project">
+              <div class="swiper-project">
+                <h1>R&D</h1>
+                <h2>Electric Vehicle</h2>
+                <p>Adopting cutting-edge technology
+                  to manufacture an EV, that offers
+                  enhanced battery efficiency through
+                  EV charging mobility.</p>
+                <p class="mt-4 project-para">Redesigning EV solutions that meet the
+                  challenging requirements and offer a
+                  better range and strength.</p>
+              </div>  
+              <div class="swiper-pagination pagination-project"></div>
+            </div>
+        
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Get in Touch -->
+    <section class="get-in-touch">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 get-touch_left">
+            <h1>Get to Know About Us</h1>
+            <p>Our nourishing statistics speaks for itself.</p>
+
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#get-in-touch-modal">
+              <span class="circle circle_rd">
+                <div id="arrow_1" class="arrow-wrapper">
+                  <div class="arrow arrow--right">
+                    <span></span>
+                  </div>
+                </div>
+              </span>
+            </button>
+          </div>
+          <div class="col-lg-8 get-touch_right">
+            <div class="d-flex col-xs-12 justify-content-between numb-touch__one">
+              <div class="numbers-touch">
+                <div class="d-flex numbers_touch">
+                  <div>
+                    <h1 style="text-align:left;">100<span>%</span></h1>
+                    <p>Repeat Customers</p>
+                  </div>
+                  <div>
+                    <h1>100<span>+</span></h1>
+                    <p style="text-align:center;">Clients</p>
+                  </div>
+                </div>
+                <div class="d-flex numbers_touch">
+                  <div>
+                    <h1>27<span>+</span></h1>
+                    <p>Products</p>
+                  </div>
+                  <div>
+                    <h1>22<span>+</span></h1>
+                    <p style="text-align:center;">Services</p>
+                  </div>
+                </div>
+                <div class="d-flex numbers_touch">
+                  <div>
+                    <h1>11<span>+</span></h1>
+                    <p>Industries</p>
+                  </div>
+                  <div>
+                    <h1>100<span>+</span></h1>
+                    <p style="text-align:center;">Employees</p>
+                  </div>
+                </div>
+              </div>
+              <div class="right-img">
+                <img src="./images/Assests/Home page/Get-in-touch/git.png" srcset="" alt="get-in-touch-image">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="get-in_touch_mobile">
+      <div class="container">
+        <div class="mob-git">
+          <img src="./images/Assests/get-in-touch.png" alt="get in touch">
+          <div style="width:100%">
+            <div class="d-flex numbers_touch">
+              <div class="mob_numbers" style="text-align:center;">
+                <h1>100<span>%</span></h1>
+                <p>Repeat <br> Customers</p>
+              </div>
+              <div class="mob_numbers" style="text-align:center;">
+                <h1>200<span>+</span></h1>
+                <p>Clients</p>
+              </div>
+              <div class="mob_numbers" style="text-align:center;">
+                <h1>27<span>+</span></h1>
+                <p>Products</p>
+              </div>
+            </div>
+            <div class="d-flex numbers_touch">
+              <div class="mob_numbers" style="text-align:center;">
+                <h1>22<span>+</span></h1>
+                <p>Services</p>
+              </div>
+              <div class="mob_numbers" style="text-align:center;">
+                <h1>11<span>+</span></h1>
+                <p>Industries</p>
+              </div>
+              <div class="mob_numbers" style="text-align:center;">
+                <h1>100<span>+</span></h1>
+                <p>Employees</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <p class="explain-git-mob">
+          Build a career breaking the boundaries of
+          traditional workplaces and hierarchical structure.
+          We are here to build endlessly! Are you?
+        </p>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#get-in-touch-modal">
+          <span class="circle circle_rd circle_mob">
+            <div id="arrow_1" class="arrow-wrapper">
+              <div class="arrow arrow--right">
+                <span></span>
+              </div>
+            </div>
+          </span>
+        </button>
+      </div>
+
+    </section>
+    <!-- True Learning -->
+
+    <section class="container true-learning">
+      <article class="active">
+        <h2>#True Learning</h2>
+        <div class="content-container">
+          <div class="title">
+            <h2>RVM Academy</h2>
+            <a href="#">Visit Site&nbsp;&nbsp;<img src="./images/Assests/Home page/True learning/Group-84.png"
+                alt=""></a>
+          </div>
+          <div class="tl-content">
+            <p>RVM Academy offers a distinct set of experiences through its True Learning Program.
+            </p>
+            <p class="mt-3">Our subject matter experts offer advanced learning with real time projects and prepare you
+              to be business ready.</p>
+            <p class="mt-3">Innovative NLP based teaching methodologies are used to trigger the right thoughts at the
+              right time.</p>
+
+          </div>
+          <div class="pagination-container">
+            <div class="btn-container">
+              <a id="true-learning-next" class="intern-button">Internship</a>
+            </div>
+            <div class="pagination pagination_1">1/2</div>
+          </div>
+
+        </div>
+      </article>
+      <article>
+        <h2>#Inspire 2022</h2>
+        <div class="content-container">
+          <div class="title">
+            <h2>Internship</h2>
+            <a href="./intern.html">Visit Site&nbsp;&nbsp;<img
+                src="./images/Assests/Home page/True learning/Group-84.png" alt=""></a>
+          </div>
+          <div class="tl-content">
+            <p>A chance to experience work at RVM.Our internship program aims at delivering more than just a learning
+              experience.
+            </p>
+            <p class="mt-2">At RVM we believe in a more interactive and progressive working practice. We offer
+              internships for students and graduates across domains such as Sales, Marketing, Design, Development,
+              Entrepreneurship and so on.
+            </p>
+            <!-- <p class="mt-3">A valuable learning experience, preparing you to be an Entrepreneur.
+              </p> -->
+          </div>
+          <div class="pagination-container">
+            <div class="btn-container">
+              <a id="true-learning-prev" class="intern-button">RVM Academy</a>
+            </div>
+            <div class="pagination">2/2</div>
+          </div>
+
+        </div>
+      </article>
+      <div class="img-container">
+        <div class="swiper mySwipercustom ">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/Assests/Home page/True learning/image 1@1x.png" alt="" /></div>
+            <div class="swiper-slide"><img src="./images/Assests/Home page/True learning/image 2@1x.png" alt="" /></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- True learning Mobile -->
+    <section class="tl-p">
+      <div class="container">
+        <h3 class="tl-p-head">#True Learning</h3>
+        <div class="tl-pr">
+          <h1>
+            RV Matrix Academy
+          </h1>
+          <p style="margin-bottom:15px; padding-top: 20px;">We at RVM Academy offer distinct
+            experiences throughout our True
+            Learning program. Our expert
+            designers and experienced
+            professionals offer advanced
+            learning and teaching process to
+            our learners.
+          </p>
+          <p style="padding-bottom:62px">A result-oriented program, that
+            guides your development by
+            providing the right direction and
+            helps you focus on the result. </p>
+          <a href="#">Visit Site&nbsp;&nbsp;<img src="./images/Assests/Home page/True learning/Group-84.png" alt=""
+              class="tl-pr-site"></a>
+        </div>
+        <h3 class="tl-p-head tl-p-head-two">#Inspire 2022</h3>
+        <div class="tl-pr">
+          <h1>
+            Internship
+          </h1>
+          <p style="margin-bottom:15px; padding-top: 20px;">A chance to experience work at RV Matrix. Our internship
+            program aims at delivering more than just a learning experience. Rather, a more interactive and
+            progressive working practice. We offer internships for students and graduates across various
+            domains including design, digital marketing, content, R&D, and more.
+
+          </p>
+          <p style="padding-bottom:62px">A valuable learning experience,
+            offering knowledge of the job and
+            the working environment. </p>
+          <a href="./intern.html">Visit Site&nbsp;&nbsp;<img src="./images/Assests/Home page/True learning/Group-84.png"
+              alt="" class="tl-pr-site"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- People in Performance -->
+    <section class="people-in-performance">
+      <div class="container">
+        <div class="performance row">
+          <div class="performance-left col-lg-6">
+            <h1>People In Performance</h1>
+            <div class="performance_line"></div>
+            <p>We at RVM evolve differently. We offer unlimited possibilities to our team by offering them opportunities
+              to explore in multiple domains, in addition to their field of choice. </p>
+            <p>
+              We prepare them for an alternate work experience apart from the standard workspace.
+            </p>
+            <a href="http://13.127.229.36/careers" class="join_us"><span class="join-us">Join Us!</span></a>
+            <!-- <a href="#">
+                <span class="circle circle_rd">
+                  <div id="arrow_1" class="arrow-wrapper">
+                    <div class="arrow arrow--right">
+                      <span></span>
+                    </div>
+                  </div>
+                </span>
+              </a> -->
+
+          </div>
+          <div class="performance-right col-lg-6">
+            <div class="performance_img">
+              <img src="./images/Assests/Home page/PIP/image 1@1x.png"
+                srcset="./images/Assests/Home page/PIP/image 1@3x.png 3x, /images/Assests/Home page/PIP/image 1@2x.png 2x">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <section class="awards">
+        <div class="container">
+          <h1 class="mob-awards_heading">Awards We
+            Encountered </h1>
+          <div class="swiper mySwiper awards-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="awards-one">
+                  <img src="./images/Assests/Home page/Awards/award 1@1x.png">
+                  <div class="awards-we_encoutered">
+                    <h1>Awards We
+                      Encountered </h1>
+                    <h5>CSS Award</h5>
+                    <h3>Best Innovation
+                      2022</h3>
+                    <p>Awarded for complete brand overhaul and localization for a wellness site.</p>
+                    <div class="skills-awards">
+                      <p class="hightlight-skills innovation">INNOVATION</p>
+                      <P class="special-kudos">SK</P>
+                      <P class="user-experience">UX</P>
+                      <P class="user-interference">UI</P>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="awards-one">
+                  <img src="./images/Assests/Home page/Awards/award 2@1x.png">
+                  <div class="awards-we_encoutered">
+                    <h1>Awards We
+                      Encountered </h1>
+                    <h5>CSS Award</h5>
+                    <h3>Best Innovation
+                      2022</h3>
+                    <p>Awarded for the fresh rebranded
+                      approach of RV Matrix website.
+                    </p>
+                    <div class="skills-awards">
+                      <p class="innovation">INNOVATION</p>
+                      <P class="hightlight-skills special-kudos">SK</P>
+                      <P class="user-experience">UX</P>
+                      <P class="user-interference">UI</P>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="awards-one">
+                  <img src="./images/Assests/Home page/Awards/award 3@1x.png">
+                  <div class="awards-we_encoutered">
+                    <h1>Awards We
+                      Encountered </h1>
+                    <h5>CSS Award</h5>
+                    <h3>Best Innovation
+                      2022</h3>
+                    <p>Awarded for the fresh rebranded approach
+                      of RV Matrix website.</p>
+                    <div class="skills-awards">
+                      <p class="innovation">INNOVATION</p>
+                      <P class="special-kudos">SK</P>
+                      <P class="hightlight-skills user-experience">UX</P>
+                      <P class="user-interference">UI</P>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="awards-one">
+                  <img src="./images/Assests/Home page/Awards/award 4@1x.png">
+                  <div class="awards-we_encoutered">
+                    <h1>Awards We
+                      Encountered </h1>
+                    <h5>CSS Award</h5>
+                    <h3>Best Innovation
+                      2022</h3>
+                    <p>
+                      A Multi Million Dollar Digital Property
+                      Management System.
+                    </p>
+                    <div class="skills-awards">
+                      <p class="innovation">INNOVATION</p>
+                      <P class="special-kudos">SK</P>
+                      <P class="user-experience">UX</P>
+                      <P class="hightlight-skills user-interference">UI</P>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+      <!-- Marqueee -->
+  
+      <div class=" ">
+        <div class="marquee marquee2">
+          <ul class="marquee-content" id="content1">
+  
+            <li>
+              <div><span class="text text_trojan">Trojan</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 66px;" class="trojan client-container">
+                  <img class="trojan-img" src="./images/Assests/customer/client-01.png" alt="" style="height:63px;width:134px;">
+                </div>
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text">NIIT</span>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text_accenture">Accenture</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 80px;" class="trojan client-container">
+                  <img class="accenture-img" src="./images/Assests/customer/client-02.png" alt="" style="height:40px;width:134px;">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span class="text">EY</span>
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text text3">PWC</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 69px;" class="trojan client-container">
+                  <img class="pwc-img" src="./images/Assests/customer/client-03.png" alt="" style="height:70px;width:100px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text">Temowa</span>
+              </div>
+            </li>
+            <li>
+              <div><span class="text text_flsmidth">FLSmidth</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 80px;" class="trojan client-container">
+                  <img class="fls-img" src="./images/Assests/customer/client-04.png" alt="" style="height:35px;width:100px;">
+                </div>
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text">NIIT</span>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text_tamilnadu">TamilNadu Govt.</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 66px;" class="trojan client-container">
+                  <img class="tngovt-img" src="./images/Assests/customer/client-05.svg" alt="" style="height:99px;width:99px;">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span class="text">EY</span>
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text text_wipro">Wipro</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 74px;" class="trojan client-container">
+                  <img class="wipro-img" src="./images/Assests/customer/client-06.png" alt="" style="height:72px;width:95px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text">Temowa</span>
+              </div>
+            </li>
+            <li>
+              <div><span class="text text_blackstraw">Blackstraw</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 80px;" class="trojan client-container">
+                  <img class="black-img" src="./images/Assests/customer/client-07.png" alt="" style="height:40px;width:134px;">
+                </div>
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text">NIIT</span>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text8">Fujitec</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 80px;" class="trojan client-container">
+                  <img class="fujitec-img" src="./images/Assests/customer/client-08.png" alt="" style="height:35px;width:122px;">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span class="text">EY</span>
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text text_kwicksoft">Kwick Soft</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 80px;" class="trojan client-container">
+                  <img class="trojan-img" src="./images/Assests/customer/client-09.svg" alt="" style="height:35px;width:100px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text">Temowa</span>
+              </div>
+            </li>
+            <li>
+              <div><span class="text text_niit">NIIT</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 80px;" class="trojan client-container">
+                  <img class="trojan-img" src="./images/Assests/customer/client-10.png" alt="" style="height:35px;width:100px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text">NIIT</span>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text_tataclass">Tata Class edge</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 70px;" class="trojan client-container">
+                  <img class="trojan-img" src="./images/Assests/customer/client-11.png" alt="" style="height:59px;width:100px;">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div><span class="text">NIIT</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="marquee">
+          <ul class="marquee-content" id="content2">
+  
+            <li>
+              <div>
+                <span class="text">EY</span>
+  
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text text3">CMS</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 70px;" class="trojan client-container">
+                  <img class="cms-img" src="./images/Assests/customer/client-12.png" alt="" style="height:50px;width:100px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text">Temowa</span>
+  
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text_medicare">Medikcare</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 70px;" class="trojan client-container">
+                  <img class="medik-img" src="./images/Assests/customer/client-13.svg" alt="" style="height:72px;width:144px;">
+                </div>
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text">NIIT</span>
+  
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text_trojan">CWI</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center;" class="trojan client-container">
+                  <img class="cwi-img" src="./images/Assests/customer/client-14.svg" alt="" style="height:90px;width:135px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div>
+                <span class="text">EY</span>
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text text_cloudious">Cloudious</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 80px;" class="trojan client-container">
+                  <img class="trojan-img" src="./images/Assests/customer/client-15.png" alt="" style="height:43px;width:124px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text">Temowa</span>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text10">EY</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 67px;" class="trojan client-container">
+                  <img class="ey-img" src="./images/Assests/customer/client-16.png" alt="" style="height:57px;width:60px;">
+                </div>
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text">NIIT</span>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text_trojan">Trojan</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 66px;" class="trojan client-container">
+                  <img class="trojan-img" src="./images/Assests/customer/client-01.png" alt="" style="height:63px;width:134px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div>
+                <span class="text">EY</span>
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text text_accenture">Accenture</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 80px;" class="trojan client-container">
+                  <img class="accenture-img" src="./images/Assests/customer/client-02.png" alt="" style="height:40px;width:134px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text">Temowa</span>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text3">PWC</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 69px;" class="trojan client-container">
+                  <img class="pwc-img" src="./images/Assests/customer/client-03.png" alt="" style="height:70px;width:100px;">
+                </div>
+              </div>
+            </li>
+  
+  
+            <li>
+              <div><span class="text">NIIT</span>
+  
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text_flsmidth">FLSmidth</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 80px;" class="trojan client-container">
+                  <img class="fls-img" src="./images/Assests/customer/client-04.png" alt="" style="height:35px;width:100px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div>
+                <span class="text">EY</span>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text_wipro">Wipro</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 74px;" class="trojan client-container">
+                  <img class="wipro-img" src="./images/Assests/customer/client-06.png" alt="" style="height:72px;width:95px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text">Temowa</span>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text_kwicksoft">Kwick Soft</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 80px;" class="trojan client-container">
+                  <img class="trojan-img" src="./images/Assests/customer/client-09.svg" alt="" style="height:45px;width:100px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text">Temowa</span>
+              </div>
+            </li>
+            <li>
+              <div><span class="text text_niit">NIIT</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 80px;" class="trojan client-container">
+                  <img class="trojan-img" src="./images/Assests/customer/client-10.png" alt="" style="height:35px;width:100px;">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text">NIIT</span>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text_medicare">Medikcare</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 70px;" class="trojan client-container">
+                  <img class="medik-img" src="./images/Assests/customer/client-13.svg" alt="" style="height:72px;width:144px;" class="">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text">NIIT</span>
+              </div>
+            </li>
+  
+            <li>
+              <div><span class="text text_tataclass">Tata Class edge</span>
+                <div
+                  style="background-color:rgb(223, 223, 223); display: flex; justify-content: center; padding-top: 70px;" class="trojan client-container">
+                  <img class="trojan-img" src="./images/Assests/customer/client-11.png" alt="" style="height:59px;width:100px;">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div><span class="text">NIIT</span>
+              </div>
+            </li>
+  
+          </ul>
+          <div class="grey-line-marquee"></div>
+        </div>
+  
+      </div>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h1 class="faq-heading">FAQ</h1>
+
+            <div class="faq-accordian">
+              <div class="accordion accordion-flush .accordion_custom" id="accordionFlushExample">
+                <div class="accordion-item accordion-item_custom">
+                  <h2 class="accordion-header accordion-header_custom" id="flush-headingOne">
+                    <button class="accordion-button accordion-button_custom accordian-new_custom acc_head" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true"
+                      aria-controls="flush-collapseOne">
+                      RV
+                      Matrix different from other top UX agencies & companies?
+                    </button>
+                  </h2>
+
+                  <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body accordion-body_custom">
+                      <p>Placeholder content for this accordion, which is
+                        intended to demonstrate
+                        the
+                        class. This is the first item's accordion body.
+                      <ul class="faq_placeholder_list">
+                        <li>Build a career breaking the boundaries of traditional workplaces
+                          and hierarchical structure. We are here to build endlessly! Are you?</li>
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item accordion-item_custom">
+                  <h2 class="accordion-header accordion-header_custom" id="flush-headingTwo">
+                    <button class="accordion-button accordion-button_custom collapsed acc_head" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                      aria-controls="flush-collapseTwo">How is
+                      RV
+                      Matrix different from other top UX agencies & companies?</button>
+                  </h2>
+
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body accordion-body_custom">
+                      <p>Placeholder content for this accordion, which is
+                        intended to demonstrate
+                        the
+                        class. This is the first item's accordion body.</p>
+                      <ul class="faq_placeholder_list">
+                        <li>Build a career breaking the boundaries of traditional workplaces
+                          and hierarchical structure. We are here to build endlessly! Are you?</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item accordion-item_custom">
+                  <h2 class="accordion-header accordion-header_custom" id="flush-headingThree">
+                    <button class="accordion-button accordion-button_custom collapsed acc_head" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                      aria-controls="flush-collapseThree">How is
+                      RV
+                      Matrix different from other top UX agencies & companies?</button>
+                  </h2>
+
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body accordion-body_custom">
+                      <p>Placeholder content for this accordion, which is
+                        intended to demonstrate
+                        the
+                        class. This is the first item's accordion body.</p>
+                      <ul class="faq_placeholder_list">
+                        <li>Build a career breaking the boundaries of traditional workplaces
+                          and hierarchical structure. We are here to build endlessly! Are you?</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item accordion-item_custom">
+                  <h2 class="accordion-header accordion-header_custom" id="flush-headingFour">
+                    <button class="accordion-button accordion-button_custom collapsed acc_head" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                      aria-controls="flush-collapseFour">How
+                      is
+                      RV
+                      Matrix different from other top UX agencies & companies?</button>
+                  </h2>
+
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body accordion-body_custom">
+                      <p>Placeholder content for this accordion, which is
+                        intended to demonstrate
+                        the
+                        class. This is the first item's accordion body.</p>
+                      <ul class="faq_placeholder_list">
+                        <li>Build a career breaking the boundaries of traditional workplaces
+                          and hierarchical structure. We are here to build endlessly! Are you?</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 faq-image">
+            <img src="./images/Assests/Home page/FAQ/image1@1x.png"
+              srcset="./images/Assests/Home page/FAQ/image1@3x.png 3x, ./images/Assests/Home page/FAQ/image1@2x.png 2x"
+              alt="faq">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- <footer>
+
+    <section class="footer-section">
+      <div class="container footer-section_one">
+        <div>
+          <a href="/"><img src="./images/Assests/Logo/RVM-logo-2022.svg" alt="Logo" class="footerlogo"></a>
+        </div>
+        <div class="footer-social">
+          <div class="part-a">
+            <p>RV Matrix Software Technologies Pvt. Ltd</p>
+            <div class="web_link">
+              <a class="india" href="https://rvmdemo.rvmatrix.in/" target="_blank">
+                India
+              </a>
+              <a class="canada active" href="http://rvmwebsite.rvmatrix.ca/" >
+                Canada
+              </a>
+            </div>
+
+          </div>
+          <div class="grey-line-footer"></div>
+          <div class="part-footer links-for-footer">
+            <a href="https://www.facebook.com/RVMatrix" target="_blank">
+              <p>Fb</p>
+            </a>
+            <a href="https://www.linkedin.com/company/rvmatrix/" target="_blank">
+              <p>In</p>
+            </a>
+            <a href="https://twitter.com/RV_Matrix" target="_blank">
+              <p>Tw</p>
+            </a>
+            <a href="https://www.linkedin.com/company/rvmatrix/" target="_blank">
+              <p>Ln</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container footer-section_two">
+        <div class="footer-section_two-contact col-md-4">
+          <div class="footer-section_two-contact-address">
+            <img src="./images/Assests/footer/india.svg" alt="" srcset="">
+            <div>
+              <h3>RV Matrix Software Technologies Pvt. Ltd.</h3>
+              <h4><a href="https://rvmdemo.rvmatrix.in/">rvmatrix.in</a></h4>
+              <p>S1 & S2, 2nd Floor, B Block, Ameen Manors,<br>
+                No.138, Nungambakkam High Rd,<br>
+                Chennai - 600034<br>
+                Tamil Nadu, India.</p>
+            </div>
+          </div>
+          <div class="footer-section_two-contact-address">
+            <img src="./images/Assests/footer/canada.svg" alt="" srcset="">
+            <div>
+              <h3>RV Matrix Software Technologies Pvt. Ltd.</h3>
+              <h4><a href="http://rvmwebsite.rvmatrix.ca/">rvmatrix.ca</a></h4>
+              <p>398-2416 Main Street,<br>
+                Vancouver BC V5T 3E2,<br>
+                Canada.</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-section_two-contact-details col-md-5">
+          <div class="services">
+            <h3>Services</h3>
+            <a href="./omnichannel.html">
+              <p>Omnichannel Design</p>
+            </a>
+            <a href="./it-staff-arguments.html">
+              <p>Staff Agumentation</p>
+            </a>
+            <a href="./softwareapplication.html">
+              <p>Software Application</p>
+            </a>
+            <a href="./dataanalytics.html">
+              <p>Data Analytics</p>
+            </a>
+            <a href="./research-development.html">
+              <p>Research and Development</p>
+            </a>
+          </div>
+          <div class="works">
+            <h3>Works</h3>
+            <a href="./index.html">
+              <p>Home</p>
+            </a>
+            <a href="./about.html">
+              <p>About</p>
+            </a>
+            <a href="http://13.127.229.36/careers" target="_blank">
+              <p>Careers</p>
+            </a>
+            <a href="./intern.html">
+              <p>Internship</p>
+            </a>
+            <a href="./ventures.html">
+              <p>Ventures</p>
+            </a>
+            <a href="https://blog.rvmatrix.in/" target="_blank">
+              <p>Blog</p>
+            </a>
+          </div>
+        </div>
+        <div class="footer-section_two-contact-details-touch col-md-2">
+          <div class="reach-us">
+            <div>
+              <h3>Reach out to us:</h3>
+            </div>
+            <div class="number">
+              <p>Head Office</p>
+              <a href="tel:44 4202 9936" target="_blank">
+                <p class="footer_number">+91 44 4202 9936</p>
+              </a>
+            </div>
+            <div class="number">
+              <p>Careers</p>
+              <a href="tel:93802 99990" target="_blank">
+                <p class="footer_number">+91 93802 99990</p>
+              </a>
+            </div>
+
+          </div>
+          <div class="enquiry">
+            <div>
+              <h3>Enquiry:</h3>
+            </div>
+            <a href="mailto: careers@rvmatrix.in" target="_blank">
+              <p>careers@rvmatrix.in</p>
+            </a>
+            <a href="mailto: contact@rvmatrix.in" target="_blank">
+              <p>contact@rvmatrix.in</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="footer-rights">
+        <h4>All Rights Reserved by RV Matrix Software Technologies Pvt. Ltd.</h4>
+      </div>
+    </section>
+  </footer> -->
+  <footer>
+    <section class="footer-section">
+      <div class="container footer-section_one">
+        <div>
+          <a href="/"
+            ><img
+              src="./images/Assests/nav-bar/RVM-logo-2022.svg"
+              alt="Logo"
+          /></a>
+        </div>
+        <div class="footer-social">
+          <div class="part-a">
+            <p>RV Matrix Software Technologies Pvt. Ltd</p>
+            <div class="web_link">
+              <a class="india" href="" target="_blank"> India </a>
+              <a
+                class="canada active"
+                href="http://rvmwebsite.rvmatrix.ca/"
+                target="_blank"
+              >
+                Canada
+              </a>
+            </div>
+          </div>
+          <div class="grey-line-footer"></div>
+          <div class="part-footer links-for-footer">
+            <a href="https://www.facebook.com/RVMatrix" target="_blank">
+              <p>Fb</p>
+            </a>
+            <a
+              href="https://instagram.com/rvmatrix_global?igshid=YmMyMTA2M2Y="
+              target="_blank"
+            >
+              <p>In</p>
+            </a>
+            <a href="https://twitter.com/RV_Matrix" target="_blank">
+              <p>Tw</p>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/rvmatrix/"
+              target="_blank"
+            >
+              <p>Ln</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container footer-section_two">
+        <div class="footer-section_two-contact col-md-4">
+          <div class="footer-section_two-contact-address">
+            <img src="./images/Assests/footer/india.svg" alt="" srcset="" />
+            <div>
+              <h3>RV Matrix Software Technologies Pvt. Ltd.</h3>
+              <h4><a href="/">rvmatrix.in</a></h4>
+              <p>
+                S1 & S2, 2nd Floor, B Block, Ameen Manors,<br />
+                No.138, Nungambakkam High Rd,<br />
+                Nungambakkam <br />
+                Chennai - 600034<br />
+                Tamil Nadu, India.
+              </p>
+            </div>
+          </div>
+          <div class="footer-section_two-contact-address">
+            <img
+              src="./images/Assests/footer/canada.svg"
+              alt=""
+              srcset=""
+            />
+            <div>
+              <h3>RV Matrix Technologies Ltd.</h3>
+              <h4>
+                <a href="http://rvmwebsite.rvmatrix.ca/" target="_blank"
+                  >rvmatrix.ca</a
+                >
+              </h4>
+              <p>
+                398-2416 Main Street,<br />
+                Vancouver BC V5T 3E2,<br />
+                Canada.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-section_two-contact-details col-md-5">
+          <div class="services">
+            <h3>Services</h3>
+            <a href="./omnichannel.html">
+              <p>Omnichannel Design</p>
+            </a>
+            <a href="./it-staff-arguments.html">
+              <p>Staff Agumentation</p>
+            </a>
+            <a href="./softwareapplication.html">
+              <p>Enterprise Solutions</p>
+            </a>
+            <a href="./dataanalytics.html">
+              <p>Data Analytics</p>
+            </a>
+            <a href="./research-development.html">
+              <p>Research and Development</p>
+            </a>
+          </div>
+          <div class="works">
+            <h3>Works</h3>
+            <a href="/">
+              <p>Home</p>
+            </a>
+            <a href="./about.html">
+              <p>About</p>
+            </a>
+            <a href="http://13.127.229.36/careers/">
+              <p>Careers</p>
+            </a>
+            <a href="./intern.html">
+              <p>Internship</p>
+            </a>
+            <a href="./ventures.html">
+              <p>Ventures</p>
+            </a>
+            <a href="https://blog.rvmatrix.in/" target="_blank">
+              <p>Blog</p>
+            </a>
+          </div>
+        </div>
+        <div class="footer-section_two-contact-details-touch col-md-2">
+          <div class="reach-us">
+            <div>
+              <h3>Reach out to us:</h3>
+            </div>
+            <div class="number">
+              <p>Head Office</p>
+              <a href="tel:44 4202 9936" target="_blank">
+                <p class="footer_number">+91 44 4202 9936</p>
+              </a>
+            </div>
+            <div class="number">
+              <p>Careers</p>
+              <a href="tel:93802 99990" target="_blank">
+                <p class="footer_number">+91 93802 99990</p>
+              </a>
+            </div>
+          </div>
+          <div class="enquiry">
+            <div>
+              <h3>Enquiry:</h3>
+            </div>
+            <a href="mailto: careers@rvmatrix.in" target="_blank">
+              <p>careers@rvmatrix.in</p>
+            </a>
+            <a href="mailto: contact@rvmatrix.in" target="_blank">
+              <p>contact@rvmatrix.in</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="footer-social__mob">
+        <div class="container">
+          <div class="social_media-two">
+            <div>
+              <div class="part-a">
+                <p>RV Matrix Software Technologies Pvt. Ltd</p>
+                <div class="web_link">
+                  <a class="india" href="" target="_blank">
+                    India
+                  </a>
+                  <a
+                    class="canada active"
+                    href="http://rvmwebsite.rvmatrix.ca/"
+                    target="_blank"
+                  >
+                    Canada
+                  </a>
+                </div>
+              </div>
+              <div class="grey-line"></div>
+              <div class="part-footer links-for-footer">
+                <a href="https://www.facebook.com/RVMatrix" target="_blank">
+                  <p>Fb</p>
+                </a>
+                <a
+                  href="https://instagram.com/rvmatrix_global?igshid=YmMyMTA2M2Y="
+                  target="_blank"
+                >
+                  <p>In</p>
+                </a>
+                <a href="https://twitter.com/RV_Matrix" target="_blank">
+                  <p>Tw</p>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/rvmatrix/"
+                  target="_blank"
+                >
+                  <p>Ln</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-rights">
+        <h4>
+          All Rights Reserved by RV Matrix Software Technologies Pvt. Ltd.
+        </h4>
+      </div>
+    </section>
+  </footer>
+  </main>
+
+
+  <div class='scrolltop'>
+    <div class='scroll icon'>
+      <img src="./images/Assests/scroll-top.svg">
+    </div>
+  </div>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <script src="./js/pooper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js"
+    integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/script.js"></script>
+
+
+  <script>
+    // Marquee
+    const root = document.documentElement;
+    const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+    const marqueeContent = document.querySelector("ul.marquee-content");
+    root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+    for (let i = 0; i < marqueeElementsDisplayed; i++) {
+      marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+    }
+  </script>
+</body>
+
+</html>

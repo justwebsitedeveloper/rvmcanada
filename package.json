@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "sweetalert2": "^11.4.24",
+    "swiper": "^8.1.5"
+  },
+  "name": "rvm2022",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvmdigital/Rvm2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rvmdigital/Rvm2022/issues"
+  },
+  "homepage": "https://github.com/rvmdigital/Rvm2022#readme",
+  "description": ""
+}
